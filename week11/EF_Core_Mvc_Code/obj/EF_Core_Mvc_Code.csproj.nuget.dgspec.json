@@ -1,0 +1,83 @@
+{
+  "format": 1,
+  "restore": {
+    "c:\\Users\\Web ve Mobil Prog\\Desktop\\web6sabahyeni\\Web6SabahYeni\\week11\\EF_Core_Mvc_Code\\EF_Core_Mvc_Code.csproj": {}
+  },
+  "projects": {
+    "c:\\Users\\Web ve Mobil Prog\\Desktop\\web6sabahyeni\\Web6SabahYeni\\week11\\EF_Core_Mvc_Code\\EF_Core_Mvc_Code.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\Web ve Mobil Prog\\Desktop\\web6sabahyeni\\Web6SabahYeni\\week11\\EF_Core_Mvc_Code\\EF_Core_Mvc_Code.csproj",
+        "projectName": "EF_Core_Mvc_Code",
+        "projectPath": "c:\\Users\\Web ve Mobil Prog\\Desktop\\web6sabahyeni\\Web6SabahYeni\\week11\\EF_Core_Mvc_Code\\EF_Core_Mvc_Code.csproj",
+        "packagesPath": "C:\\Users\\Web ve Mobil Prog\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Web ve Mobil Prog\\Desktop\\web6sabahyeni\\Web6SabahYeni\\week11\\EF_Core_Mvc_Code\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Web ve Mobil Prog\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.15, )"
+            },
+            "Microsoft.EntityFrameworkcore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.15, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

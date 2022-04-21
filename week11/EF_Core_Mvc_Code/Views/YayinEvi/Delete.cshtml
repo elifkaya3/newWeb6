@@ -1,0 +1,20 @@
+@model EF_Core_Mvc_Code.Models.Yayinevleri
+@{
+    ViewData["Title"] = "Delete";
+}
+<div>
+    <h4>Yayın Evleri</h4>
+    <h5>Yayın Evi ID:</h5>
+    <p>@Model.Id</p>
+    <h5>Yayın Evi Ad</h5>
+    <p>@Model.Ad</p>
+    <h5>Yayın Evi Adres</h5>
+    <p>@Model.Adres</p>
+    <h5>Yayın Evi Tel</h5>
+    <p>@Model.Tel</p>
+</div>
+<form asp-action="Delete">
+    <input type="hidden" asp-for="Id">
+    <input type="submit" value="Yayın Evini Sil" class="btn btn-sm btn-danger">
+</form>
+<a asp-action="Index">Yayın Evlerine Dön</a>

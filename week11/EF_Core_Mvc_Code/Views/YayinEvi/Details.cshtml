@@ -1,0 +1,18 @@
+@model EF_Core_Mvc_Code.Models.Yayinevleri
+@{
+    ViewData["Title"] = "Details";
+}
+<h1>Yayın Evi Detayları</h1>
+
+<div>
+    <h5>Yayın Evi ID:</h5>
+    <p>@Model.Id</p>
+    <h5>Yayın Evi Ad</h5>
+    <p>@Model.Ad</p>
+    <h5>Yayın Evi Adres</h5>
+    <p>@Model.Adres</p>
+    <h5>Yayın Evi Telefonu</h5>
+    <p>@Model.Tel</p>
+</div>
+
+<a asp-action="Index">Yayın Evleri Listesine Dön</a>

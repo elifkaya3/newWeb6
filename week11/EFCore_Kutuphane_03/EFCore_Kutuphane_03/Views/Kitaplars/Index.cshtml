@@ -1,0 +1,66 @@
+﻿@model IEnumerable<EFCore_Kutuphane_03.Models.Kitaplar>
+
+@{
+    ViewData["Title"] = "Kitaplar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Kitaplar</h1>
+
+<p>
+    <a asp-action="Create" class="btn-primary rounded text-decoration-none">Yeni Kitap Kaydı Oluştur</a>
+</p>
+<table class="table bg-dark">
+    <thead>
+        <tr class="text-white">
+            <th>
+                Kitap adı
+            </th>
+            <th>
+                Sayfa Sayısı    
+            </th>
+            <th>
+                Stok
+            </th>
+            <th>
+                Kitap Türü
+            </th>
+            <th>
+                Yayın Evi
+            </th>
+            <th>
+                Yazar
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr class="text-white">
+            <td>
+                @Html.DisplayFor(modelItem => item.Ad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SayfaSayisi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Stok)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tur.TurAd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YayinEvi.Ad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Yazar.AdSoyad)
+            </td>
+            <td>
+                <a class="btn-outline-warning text-decoration-none rounded" asp-action="Edit" asp-route-id="@item.Isbn">Güncelle</a> |
+                <a class="btn-outline-warning text-decoration-none rounded" asp-action="Details" asp-route-id="@item.Isbn">Detaylar</a> |
+                <a class="btn-outline-warning text-decoration-none rounded"asp-action="Delete" asp-route-id="@item.Isbn">Kaydı Sil</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

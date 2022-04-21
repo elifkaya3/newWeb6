@@ -1,0 +1,25 @@
+@model Kitaplar
+@{
+    ViewData["Title"] = @Model.Ad + "adlı kitabın detayları";
+}
+<h3>@Model.Ad adlı kitabın detayları</h3>
+<hr>
+<div>
+    <h6>Kitabın ISBN</h6>
+    <p>@Model.Isbn</p>
+    <h6>Kitabın Adı</h6>
+    <p>@Model.Ad</p>
+    <h6>Sayfa Sayısı</h6>
+    <p>@Model.SayfaSayisi</p>
+    <h6>Stok</h6>
+    <p>@Model.Stok</p>
+
+    <h6>Kitabın Türü</h6>
+    <p>@Model.Tur.TurAd</p>
+
+    <h6>Kitabın Yazarı</h6>
+    <p>@Model.Yazar.AdSoyad</p>
+
+    <h6>Kitabın Yayın Evi</h6>
+    <p>@Model.YayinEvi.Ad</p>
+</div>

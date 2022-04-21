@@ -1,0 +1,60 @@
+﻿@model IEnumerable<EFCore_Kutuphane_03.Models.Odunc>
+
+@{
+    ViewData["Title"] = "Ödünç";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Ödünç</h1>
+
+<p>
+    <a asp-action="Create" class="btn-primary rounded text-decoration-none">Yeni Kayıt Oluştur</a>
+</p>
+<table class="table bg-dark">
+    <thead>
+        <tr class="text-white">
+            <th>
+                Veriliş Tarihi
+            </th>
+            <th>
+                Teslim Tarihi
+            </th>
+            <th>
+                İptal
+            </th>
+            <th>
+                Kitap ISBN
+            </th>
+            <th>
+                Üye Adı
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr class="text-white">
+            <td>
+                @Html.DisplayFor(modelItem => item.VerilisTarihi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeslimTarihi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Iptal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KitapIsbnNavigation.Isbn)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Uye.Id)
+            </td>
+            <td>
+                <a class="btn-outline-warning text-decoration-none rounded" asp-action="Edit" asp-route-id="@item.Id">Güncelle</a> |
+                <a class="btn-outline-warning text-decoration-none rounded" asp-action="Details" asp-route-id="@item.Id">Detaylar</a> |
+                <a class="btn-outline-warning text-decoration-none rounded" asp-action="Delete" asp-route-id="@item.Id">Kaydı Sil</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

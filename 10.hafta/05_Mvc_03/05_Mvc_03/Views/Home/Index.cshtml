@@ -1,0 +1,37 @@
+﻿@*
+    Asp.Net Core mimarisinde .cshtml
+     uzantılı dosayalar içerisinde HTML C#
+     kodları yazılmasını sağlayan teknolojiye razor diyoruz.
+     İŞte şu an içinde bulunduğumuz dosya dabir razor dosyası.
+     Bu dosya içindeki kodları çalıştırıp,sonuç olarak bir HTML üretir.
+*@
+
+@{
+    string kurumAd = "Wissen Akademi";
+    string[] adlar = { "Recep", "Mikail", "Aslı", "Alex", "van hoidonk", "Muslera" };
+    string[] menu = { "Anasayfa", "Hakkımda", "Projeler", "İletişim" };
+    int yas = 23;
+    <nav style="display:flex; justify-content:space-around">
+        <ul style="list-style-type:none; display:flex;">
+            @{
+                foreach (var siradakiMenu in menu)
+                {
+                    <li style="display:block;background-color:orangered;margin:0px 15px;padding:10px">@siradakiMenu</li>
+
+                }
+            }
+        </ul>
+    </nav>
+}
+
+<h1>@kurumAd</h1>
+
+<ul>
+    @{
+        foreach (string ad in adlar)
+        {
+            <li>@ad</li>
+        }
+
+    }
+</ul>

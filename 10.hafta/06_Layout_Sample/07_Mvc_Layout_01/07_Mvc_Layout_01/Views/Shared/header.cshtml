@@ -1,0 +1,91 @@
+﻿
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Sample</title>
+    <style>
+        /* *{
+            box-sizing: border-box;
+        } */
+        nav,
+        footer {
+            display: flex;
+            background-color: rgb(129, 56, 56);
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 0 auto;
+            height: 100px;
+            padding: 0px 15px;
+        }
+
+        footer {
+            color: aliceblue;
+            height: 50px;
+            justify-content: center;
+        }
+
+        section {
+            height: 400px;
+            width: 80%;
+            margin: 0px auto;
+            padding: 0;
+        }
+
+        .logo {
+            font-size: 35px;
+            color: wheat;
+        }
+
+        /* .menuBox{
+            height: 100px;
+            line-height: 100px;
+        } */
+        .menuBox ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+            .menuBox ul li {
+                width: 150px;
+                cursor: pointer;
+                display: block;
+                height: 25px;
+                line-height: 25px;
+                padding: 15px;
+                background-color: orangered;
+                margin: 0 15px;
+                font-size: 20px;
+                text-align: center;
+                font-weight: bold;
+                font-family: 'Times New Roman', Times, serif;
+            }
+
+                .menuBox ul li:hover {
+                    background-color: rgb(131, 35, 0);
+                }
+
+                .menuBox ul li a {
+                    color: wheat;
+                    text-decoration: none;
+                }
+    </style>
+</head>
+
+
+    <!--  header başlangıcı -->
+    <nav>
+        <div class="logo">
+            <h4>Wissen</h4>
+        </div>
+        <div class="menuBox">
+            <ul>
+                <li><a href="home">Anasayfa</a></li>
+                <li><a href="hakkimda">Hakkımda</a></li>
+                <li><a href="iletisim">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!--  header bitişi -->
