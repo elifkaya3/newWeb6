@@ -1,0 +1,5 @@
+dotnet new mvc
+dotnet ef migrations add Mig_CreateDb
+dotnet ef database update
+dotnet ef migrations add Mig_RelationsCreate
+dotnet ef migrations add Mig_IsDeletedColumnAdd
