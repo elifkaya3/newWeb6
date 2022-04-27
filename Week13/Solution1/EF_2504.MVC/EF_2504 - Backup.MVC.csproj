@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+	
+	<ı<ItemGroup></ItemGroup>
+		
+	prpj<projectReProjectReference/> 
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EF_2504.DAL\EF_2504.DAL.csproj" />
+  </ItemGroup>
+
+</Project>

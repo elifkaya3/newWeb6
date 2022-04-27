@@ -1,0 +1,7 @@
+dotnet ef dbcontext scaffold "Server=DESKTOP-8M7D7GE\SQLEXPRESS; Database=KutuphaneSabah; Trusted_Connection=true;" Microsoft.EntityFrameworkCore.SqlServer -o Models
+ services.AddDbContext<EF_Core_Mvc_Code.Models.KutuphaneSabahContext>(options=>options.UseSqlServer(Configuration.GetConnectionString("KutuphaneConnection")));
+ "ConnectionStrings":{
+    "KutuphaneConnection":"Server=DESKTOP-8M7D7GE\\SQLEXPRESS; Database=KutuphaneSabah; Trusted_Connection=true;"
+  }
+
+            services.AddDbContext<EF_Core_Mvc_Code.Models.KutuphaneSabahContext>(options=>options.UseSqlServer(Configuration.GetConnectionString("KutuphaneConnection")));
