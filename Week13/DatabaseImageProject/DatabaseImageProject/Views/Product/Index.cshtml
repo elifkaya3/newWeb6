@@ -1,0 +1,24 @@
+﻿@model List<DatabaseImageProject.Models.Entities.Product>
+@{ 
+    ViewData["Title"] = "Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h1>Product List</h1>
+<p>
+    <a asp-action="Create">Create New Product</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model=>model)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
