@@ -20,6 +20,7 @@ namespace DatabaseImageProject.Models.Concrete
         public DbSet<Product> Products { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            //optionsBuilder.UseSqlServer("Name=ConnectionStrings:DatabaseImageConn"); 
             optionsBuilder.UseSqlServer("Server=DESKTOP-8M7D7GE\\SQLEXPRESS;Database=ProductImageDbSabah; Trusted_Connection=true;");
         }
     }

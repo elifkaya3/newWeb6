@@ -1,0 +1,5 @@
+C:\Users\Web ve Mobil Prog\Desktop\MiniShopApp\MiniShopApp\MiniShopApp.Entity\obj\Debug\net5.0\MiniShopApp.Entity.csproj.AssemblyReference.cache
+C:\Users\Web ve Mobil Prog\Desktop\MiniShopApp\MiniShopApp\MiniShopApp.Entity\obj\Debug\net5.0\MiniShopApp.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Web ve Mobil Prog\Desktop\MiniShopApp\MiniShopApp\MiniShopApp.Entity\obj\Debug\net5.0\MiniShopApp.Entity.AssemblyInfoInputs.cache
+C:\Users\Web ve Mobil Prog\Desktop\MiniShopApp\MiniShopApp\MiniShopApp.Entity\obj\Debug\net5.0\MiniShopApp.Entity.AssemblyInfo.cs
+C:\Users\Web ve Mobil Prog\Desktop\MiniShopApp\MiniShopApp\MiniShopApp.Entity\obj\Debug\net5.0\MiniShopApp.Entity.csproj.CoreCompileInputs.cache

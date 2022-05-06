@@ -26,7 +26,7 @@ namespace DatabaseImageProject
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            //services.AddDbContext<ProductDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("ProductConn")));
+            services.AddDbContext<ProductDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("Server=DESKTOP-8M7D7GE\\SQLEXPRESS;Database=ProductImageDbSabah; Trusted_Connection=true;")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

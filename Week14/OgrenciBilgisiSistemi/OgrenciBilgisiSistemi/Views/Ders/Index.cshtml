@@ -1,0 +1,34 @@
+﻿@model List<OgrenciBilgisiSistemi.Models.Entities.Ders>
+@{
+    ViewData["Title"] = "Dersler";
+}
+<h1 class="display-3">Ders Listesi</h1>
+<hr />
+<a asp-action="Create" class="btn btn-sm btn-primary">Create New Lesson</a><br /><br />
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>Ders Id</th>
+            <th>Ders Ad</th>
+            <th>Ders Hocası</th>
+            <th>Ders Kredisi</th>
+            <th>Dersin Dönemi</th>
+            <th>Öğrenciler Dersler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.DersId</td>
+            <td>@item.DersAd</td>
+            <td>@item.DersHocası</td>
+            <td>@item.Kredi</td>
+            <td>@item.Donem</td>
+            <td>@item.OgrenciDersler</td>
+            
+        </tr>
+        }
+    </tbody>
+</table>

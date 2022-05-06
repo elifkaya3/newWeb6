@@ -18,7 +18,7 @@ namespace DatabaseImageProject.Migrations
                 .HasAnnotation("ProductVersion", "5.0.16")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("DatabaseImageProject.Models.Product", b =>
+            modelBuilder.Entity("DatabaseImageProject.Models.Entities.Product", b =>
                 {
                     b.Property<int>("ProductId")
                         .ValueGeneratedOnAdd()

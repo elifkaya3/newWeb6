@@ -1,0 +1,39 @@
+﻿@model OgrenciBilgisiSistemi.Models.Entities.Ogrenci
+
+@{
+    ViewData["Title"] = "Create New Student";
+}
+<h1 class="display-3">Create New Student</h1>
+<hr>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div class="form-group">
+                <label class="control-label">Öğrenci Numarası</label>
+                <input class="form-control" type="text" asp-for="OgrenciNo">
+
+                <label class="control-label">Öğrenci Adı</label>
+                <input class="form-control" type="text" asp-for="OgrenciAd">
+
+                <label class="control-label">Öğrenci Soyadı</label>
+                <input class="form-control" type="text" asp-for="OgrenciSoyad">
+
+                <label class="control-label">Öğrenci Doğum Tarihi</label>
+                <input class="form-control" type="datetime" asp-for="OgrenciDogumTarihi">
+
+                <label class="control-label">Öğrenci Kayıt Tarihi</label>
+                <input class="form-control" type="datetime" asp-for="OgrenciKayitTarihi">
+
+                <label class="control-label">Öğrencinin Bölümü</label>
+                <select class="form-control" type="text" asp-for="BolumId" />
+
+                <label class="control-label">Öğrenci Dersleri</label>
+                <select class="form-control" type="text" asp-for="OgrenciDersler" />
+
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save Changes" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+</div>

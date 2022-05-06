@@ -1,0 +1,38 @@
+﻿@model OgrenciBilgisiSistemi.Models.Entities.Ogrenci
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h5 class="display-5">DELETE!</h5>
+<hr>
+@Model.OgrenciId
+<br>
+@Model.OgrenciNo
+<br>
+@Model.OgrenciAd
+<br>
+@Model.OgrenciSoyad
+<br>
+@Model.OgrenciDogumTarihi
+<br>
+@Model.OgrenciKayitTarihi
+<br>
+@Model.BolumId
+<br>
+@Model.OgrenciDersler
+<br>
+<form asp-action="Delete">
+    <input type="hidden" asp-for="OgrenciId">
+    <input type="submit" value="Sil!" class="btn btn-danger">
+</form>
+<form asp-action="DeleteComplete">
+    <input type="hidden" asp-for="OgrenciId">
+    <input type="hidden" asp-for="OgrenciNo">
+    <input type="hidden" asp-for="OgrenciAd">
+    <input type="hidden" asp-for="OgrenciSoyad">
+    <input type="hidden" asp-for="OgrenciDogumTarihi">
+    <input type="hidden" asp-for="OgrenciKayitTarihi">
+    <input type="hidden" asp-for="BolumId">
+    <input type="hidden" asp-for="OgrenciDersler">
+    <input type="submit" value="Veritabanından Tamamen Sil!" class="btn btn-danger">
+</form>

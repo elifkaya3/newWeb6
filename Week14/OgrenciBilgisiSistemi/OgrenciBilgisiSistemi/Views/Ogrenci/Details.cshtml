@@ -1,0 +1,43 @@
+﻿@model OgrenciBilgisiSistemi.Models.Entities.Ogrenci
+
+@{
+    ViewData["Title"] = "Edit Details";
+}
+<h1 class="display-3">Details Student</h1>
+<hr>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Details">
+            <div class="form-group">
+                <label class="control-label">Öğrenci Id:</label>
+                <label class="control-label text-danger" asp-for="OgrenciId">@Model.OgrenciId</label>
+                <br>
+
+                <label class="control-label">Öğrenci Adı</label>
+                <label class="control-label text-danger" asp-for="OgrenciAd">@Model.OgrenciId</label>
+
+                <label class="control-label">Öğrenci Numarası</label>
+                <label class="control-label text-danger" asp-for="OgrenciNo">@Model.OgrenciId</label>
+
+                <label class="control-label">Öğrenci Soyadı</label>
+                <label class="control-label text-danger" asp-for="OgrenciSoyad">@Model.OgrenciId</label>
+
+                <label class="control-label">Öğrenci Doğum Tarihi</label>
+                <label class="control-label text-danger" asp-for="OgrenciDogumTarihi">@Model.OgrenciId</label>
+
+                <label class="control-label">Öğrenci Kayıt Tarihi</label>
+                <label class="control-label text-danger" asp-for="OgrenciKayitTarihi">@Model.OgrenciId</label>
+
+                <label class="control-label">Öğrencinin Bölümü</label>
+                <label class="control-label text-danger" asp-for="BolumId">@Model.OgrenciId</label>
+
+                <label class="control-label">Öğrenci Dersleri</label>
+                <label class="control-label text-danger" asp-for="OgrenciDersler">@Model.OgrenciId</label>
+
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save Changes" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+</div>
