@@ -10,8 +10,9 @@ namespace AppDersAtama.Models.Entity
         public int DersId { get; set; }
         public string DersAd { get; set; }
         public string DersHocası { get; set; }
-        public decimal Kredi { get; set; }
-        public int Donem { get; set; }
+        public sbyte Kredi { get; set; }
+        public sbyte Donem { get; set; }
         public List<OgrenciDers> OgrenciDersler { get; set; }
+        public List<BolumDers> BolumDersler { get; set; }
     }
 }

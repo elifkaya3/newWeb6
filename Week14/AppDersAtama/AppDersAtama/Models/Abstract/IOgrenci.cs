@@ -8,7 +8,7 @@ namespace AppDersAtama.Models.Abstract
 {
     public interface IOgrenci : IRepository<Ogrenci>
     {
-        public void GetWithDepartment();
-        public Ogrenci GetByIdWithCourses(int id);
+        public void GetWithBolum();
+        public Ogrenci GetByIdWithDersler(int id);
     }
 }

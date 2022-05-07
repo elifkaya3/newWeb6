@@ -1,0 +1,31 @@
+﻿@model AppDersAtama.Models.OgrenciModel
+
+
+    <h5 class="display-4">Assign Lesson</h5>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label class="col-form-label text-danger">Öğrenci Ad: </label>
+                <label class="col-form-label">@Model.OgrenciAd</label>
+            </div>
+            <div class="form-group">
+                <label class="col-form-label text-danger">Öğrenci Soyad: </label>
+                <label class="col-form-label">@Model.OgrenciSoyad</label>
+            </div>
+        </div>
+        <div class="col-md-8">
+            @for (int i = 0; i < Model.SecilenDersler.Count; i++)
+            {
+                <input type="hidden" name="SecilenDersler[@i].DersId" value="@Model.SecilenDersler[i].DersId" />
+                <input type="hidden" name="SecilenDersler[@i].DersAd" value="@Model.SecilenDersler[i].DersAd" />
+            }
+            @foreach (var item in (List<AppDersAtama.Models.Entity.Ders>)ViewBag.Dersler)
+            {
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="@item.DersId" name="DersId" id="ders_@item.DersId" @(Model.SecilenDersler.Any(x => x.DersId == item.DersId) ? "checked" : "") />
+                    <label class="form-check-label" for="ders_@item.DersId">@item.DersAd</label>
+                </div>
+            }
+        </div>
+    </div>

@@ -1,4 +1,5 @@
-﻿using Sales.Models.Abstract;
+﻿using Microsoft.EntityFrameworkCore;
+using Sales.Models.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,12 @@ namespace Sales.Models.Concrete
 {
     public class BaseRepository<T> : IRepository<T> where T:class
     {
+        protected readonly DbContext _context;
+        public BaseRepository(DbContext context)
+        {
+            _context = context;
+        }
+
         public void Add(T entity)
         {
             using (var _context = new SalesDbContext())

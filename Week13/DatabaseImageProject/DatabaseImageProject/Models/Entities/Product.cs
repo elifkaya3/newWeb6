@@ -10,8 +10,6 @@ namespace DatabaseImageProject.Models.Entities
         public int ProductId { get; set; }
         public string ProductName { get; set; }
         public decimal ProductPrice { get; set; }
-        public string ProductImageFullName { get; set; }
-        public string ProductImageFileName { get; set; }
-        public long ProductImageSize { get; set; }
+        public string ProductImage { get; set; }
     }
 }

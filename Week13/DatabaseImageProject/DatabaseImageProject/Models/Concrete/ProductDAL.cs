@@ -9,6 +9,10 @@ namespace DatabaseImageProject.Models.Abstract
 {
     public class ProductDAL : BaseRepository<Product>
     {
-
+        private readonly ProductDbContext _context;
+        public ProductDAL(ProductDbContext context)
+        {
+            _context = context;
+        }
     }
 }
