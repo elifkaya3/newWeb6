@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Web ve Mobil Prog\\Desktop\\MiniShopApp\\MiniShopApp\\MiniShopApp.Entity\\MiniShopApp.Entity.csproj",
+      "projectUniqueName": "C:\\Users\\Web ve Mobil Prog\\Desktop\\Projects_ElifKaya\\newWeb6\\Week14\\MiniShopApp\\MiniShopApp\\MiniShopApp.Entity\\MiniShopApp.Entity.csproj",
       "projectName": "MiniShopApp.Entity",
-      "projectPath": "C:\\Users\\Web ve Mobil Prog\\Desktop\\MiniShopApp\\MiniShopApp\\MiniShopApp.Entity\\MiniShopApp.Entity.csproj",
+      "projectPath": "C:\\Users\\Web ve Mobil Prog\\Desktop\\Projects_ElifKaya\\newWeb6\\Week14\\MiniShopApp\\MiniShopApp\\MiniShopApp.Entity\\MiniShopApp.Entity.csproj",
       "packagesPath": "C:\\Users\\Web ve Mobil Prog\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Web ve Mobil Prog\\Desktop\\MiniShopApp\\MiniShopApp\\MiniShopApp.Entity\\obj\\",
+      "outputPath": "C:\\Users\\Web ve Mobil Prog\\Desktop\\Projects_ElifKaya\\newWeb6\\Week14\\MiniShopApp\\MiniShopApp\\MiniShopApp.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Web ve Mobil Prog\\AppData\\Roaming\\NuGet\\NuGet.Config",

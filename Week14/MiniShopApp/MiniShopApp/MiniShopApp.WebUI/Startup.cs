@@ -4,6 +4,10 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MiniShopApp.Bussiness.Abstract;
+using MiniShopApp.Bussiness.Concrete;
+using MiniShopApp.Data.Abstract;
+using MiniShopApp.Data.Concrete.EFCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +27,16 @@ namespace MiniShopApp.WebUI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //güvenlik sebebiyle businnes katmanýna yazdýklarýmýz kullanýldýðýnda þu çalýþsýn deme þekli
+             
+            services.AddScoped<IProductRepository, EFCoreProductRepository>();
+            services.AddScoped<ICategoryRepository, EFCoreCategoryRepository>();
+
+            //Proje boyunca IProductService çaðrýldýðýnda ProductMAnager kullan
+            services.AddScoped<IProductService, ProductManager>();
+            //Proje boyunca ICategoryService çaðrýldýðýnda categoryMAnager kullan
+            services.AddScoped<ICategoryService, CategoryManager>();
+            //Bu metod bizim projemizin MVC yapýsýnda olmasýný saðlýyor.
             services.AddControllersWithViews();
         }
 
@@ -31,6 +45,7 @@ namespace MiniShopApp.WebUI
         {
             if (env.IsDevelopment())
             {
+                SeedDatabase.Seed();
                 app.UseDeveloperExceptionPage();
             }
             else

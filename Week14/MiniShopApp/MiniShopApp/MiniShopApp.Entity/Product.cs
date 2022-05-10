@@ -9,7 +9,10 @@ namespace MiniShopApp.Entity
         public decimal? Price { get; set; }
         public string Description { get; set; }
         public string ImageUrl { get; set; }
+        public string Url { get; set; }
+        //onaylı mı
         public bool IsApproved { get; set; }
+        //anasayfada mı
         public bool IsHome { get; set; }
         public List<ProductCategory> ProductCategories { get; set; }
 
