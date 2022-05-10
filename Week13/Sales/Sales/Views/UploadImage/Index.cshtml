@@ -1,4 +1,25 @@
-﻿<form asp-action="ImageUpload" enctype="multipart/form-data">
+﻿@model IEnumerable<Sales.Models.Entities.Product>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table>
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+    </tr>
+    @foreach (var product in Model)
+    {
+        <tr>
+            <td>@product.ProductId</td>
+            <td>@product.ProductName</td>
+        </tr>
+    }
+</table>
+
+<form asp-action="ImageUpload" enctype="multipart/form-data">
     <h3 class="display-3">Resim Yükle</h3>
     <div class="form-group">
         <label>Resim Yolu</label>

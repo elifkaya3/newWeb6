@@ -13,7 +13,7 @@ namespace AppDersAtama.Models.Entity
         public string OgrenciSoyad { get; set; }
         public DateTime OgrenciDogumTarihi { get; set; }
         public DateTime OgrenciKayitTarihi { get; set; }
-        public int Donem { get; set; }
+        public sbyte Donem { get; set; }
         public Bolum Bolum { get; set; }
         public int BolumId { get; set; }
         public List<OgrenciDers> OgrenciDersler { get; set; }

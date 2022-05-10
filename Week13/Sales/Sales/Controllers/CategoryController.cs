@@ -9,10 +9,14 @@ namespace Sales.Controllers
 {
     public class CategoryController : Controller
     {
+        private readonly ICategoryRepository _categoryRepository;
+        public CategoryController(ICategoryRepository categoriesController)
+        {
+            _categoryRepository = categoriesController;
+        }
         public IActionResult Index()
         {
-            var categories = new CategoryDAL();
-            return View(categories.GetAll());
+            return View(_categoryRepository.GetAll());
         }
     }
 }

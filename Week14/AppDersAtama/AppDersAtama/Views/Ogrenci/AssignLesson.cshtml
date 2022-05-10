@@ -1,0 +1,39 @@
+﻿@model List<AppDersAtama.Models.Entity.Ogrenci>
+
+<h5 class="display-4">Assign Lesson</h5>
+<hr />
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-sm table-bordered">
+            <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>No</td>
+                    <td>Öğrenci Ad</td>
+                    <td>Öğrenci Soyad</td>
+                    <td>Dönem</td>
+                    <td>Bölüm</td>
+                    <td>Alınan Dersler</td>
+                    <td>Aldığı Dersler</td>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+    <tr>
+        <td>@item.OgrenciId</td>
+        <td>@item.OgrenciNo</td>
+        <td>@item.OgrenciAd</td>
+        <td>@item.OgrenciSoyad</td>
+        <td>@item.Donem</td>
+        <td>@item.Bolum</td>
+        <td></td>
+        <td>
+            <a asp-controller="Ogrenci" asp-action="Assign" asp-route-id="@item.OgrenciId" class="btn btn-sm btn-primary">Assign Lesson</a>
+        </td>
+    </tr>}
+            </tbody>
+        </table>
+    </div>
+
+</div>

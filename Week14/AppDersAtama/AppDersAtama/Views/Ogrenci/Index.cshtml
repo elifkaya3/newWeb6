@@ -1,0 +1,37 @@
+﻿@model List<AppDersAtama.Models.Entity.Ogrenci>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="bg-dark text-light">Öğrenciler</h1>
+
+<a asp-action="Create">Öğrenci Kaydet</a>
+
+<table class="table table-dark text-white">
+    <thead>
+        <tr>
+            <th>Öğrenci Id</th>
+            <th>Öğrenci No</th>
+            <th>Öğrenci Ad</th>
+            <th>Öğrenci Soyad</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ogrenci in Model)
+        {
+            <tr>
+                <td>@ogrenci.OgrenciId</td>
+                <td>@ogrenci.OgrenciNo</td>
+                <td>@ogrenci.OgrenciAd</td>
+                <td>@ogrenci.OgrenciSoyad</td>
+                <td class="d-flex">
+                    <a class="btn mx-1 btn-sm btn-success" asp-action="Details" asp-route-id="@ogrenci.OgrenciId">Detaylar</a>
+                    <a class="btn mx-1 btn-sm btn-warning" asp-action="Edit" asp-route-id="@ogrenci.OgrenciId">Düzenle</a>
+                    <a class="btn mx-1 btn-sm btn-danger" asp-action="Delete" asp-route-id="@ogrenci.OgrenciId">Sil</a>
+                    <a asp-controller="Ogrenci" asp-action="Assign" asp-route-id="@ogrenci.OgrenciId" class="btn btn-sm btn-primary">Assign Lesson</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
