@@ -13,5 +13,9 @@ namespace MiniShopApp.Data.Abstract
 
         //ekstra kullanmka istedğim metodları ekleyebilirim 
         List<Product> GetProductsByCategory(string name);
+        Product GetProductsDetails(string url);
+        List<Product> GetHomePageProduct();
+        List<Product> GetSearchResult(string searchString); 
+
     }
 }

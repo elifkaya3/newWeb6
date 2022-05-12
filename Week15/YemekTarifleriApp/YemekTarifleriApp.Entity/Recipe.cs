@@ -10,7 +10,9 @@ namespace YemekTarifleriApp.Entity
     {
         public int RecipeId { get; set; }
         public string RecipeName { get; set; }
-        public string RecipeImageUrl { get; set; }
+        public string ImageUrl { get; set; }
+        public string Url { get; set; }
+        public string RecipeMaterial { get; set; }
         public string RecipeDescription { get; set; }
         public DateTime RecipeReleaseDate { get; set; }
         public List<Member> Members { get; set; }

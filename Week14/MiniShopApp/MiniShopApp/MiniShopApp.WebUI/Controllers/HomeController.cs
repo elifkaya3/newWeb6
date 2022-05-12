@@ -20,7 +20,7 @@ namespace MiniShopApp.WebUI.Controllers
         public IActionResult Index()
         {
             //product servisten çağrılan komutla ilgili viewe listeleme metodu gerçekleşmesi için yzılan komut.
-            return View(_productService.GetAll());
+            return View(_productService.GetHomePageProduct());
         }
     }
 }

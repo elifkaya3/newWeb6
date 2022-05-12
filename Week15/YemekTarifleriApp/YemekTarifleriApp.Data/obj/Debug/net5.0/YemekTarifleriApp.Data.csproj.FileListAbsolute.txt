@@ -1,0 +1,5 @@
+C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.Data\obj\Debug\net5.0\YemekTarifleriApp.Data.csproj.AssemblyReference.cache
+C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.Data\obj\Debug\net5.0\YemekTarifleriApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.Data\obj\Debug\net5.0\YemekTarifleriApp.Data.AssemblyInfoInputs.cache
+C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.Data\obj\Debug\net5.0\YemekTarifleriApp.Data.AssemblyInfo.cs
+C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.Data\obj\Debug\net5.0\YemekTarifleriApp.Data.csproj.CoreCompileInputs.cache

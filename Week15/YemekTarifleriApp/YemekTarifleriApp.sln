@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.31424.327
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YemekTarifleriApp.WebUI", "YemekTarifleriApp\YemekTarifleriApp.WebUI.csproj", "{7E2837B2-1725-4376-BDA2-810EC4FB2331}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YemekTarifleriApp.Entity", "YemekTarifleriApp.Entity\YemekTarifleriApp.Entity.csproj", "{A32F1BE8-4777-4F98-B60C-3E5D6CEAE449}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YemekTarifleriApp.Entity", "YemekTarifleriApp.Entity\YemekTarifleriApp.Entity.csproj", "{A32F1BE8-4777-4F98-B60C-3E5D6CEAE449}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YemekTarifleriApp.Data", "YemekTarifleriApp.Data\YemekTarifleriApp.Data.csproj", "{5C027B9C-1E77-4E50-A7B4-EF2AE15322B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YemekTarifleriApp.Data", "YemekTarifleriApp.Data\YemekTarifleriApp.Data.csproj", "{5C027B9C-1E77-4E50-A7B4-EF2AE15322B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YemekTarifleriApp.Bussiness", "YemekTarifleriApp.Bussiness\YemekTarifleriApp.Bussiness.csproj", "{5DD1B8D3-87E5-47CE-BC57-553E3F12DBC3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YemekTarifleriApp.Bussiness", "YemekTarifleriApp.Bussiness\YemekTarifleriApp.Bussiness.csproj", "{5DD1B8D3-87E5-47CE-BC57-553E3F12DBC3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

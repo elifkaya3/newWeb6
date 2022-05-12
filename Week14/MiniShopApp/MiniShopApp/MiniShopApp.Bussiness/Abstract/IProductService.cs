@@ -16,5 +16,9 @@ namespace MiniShopApp.Bussiness.Abstract
         void Delete(Product entity);
 
         List<Product> GetProductsByCategory(string name);
+        Product GetProductDetails(string url);
+        List<Product> GetHomePageProduct();
+        List<Product> GetSearchResult(string searchString);
+
     }
 }
