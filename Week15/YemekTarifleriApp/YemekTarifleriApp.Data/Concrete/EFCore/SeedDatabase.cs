@@ -35,6 +35,8 @@ namespace YemekTarifleriApp.Data.Concrete.EFCore
                 {
                     context.RecipeMembers.AddRange(RecipeMembers);
                 }
+                context.SaveChanges();
+
             }
         }
         private static Category[] Categories = 
@@ -101,8 +103,8 @@ namespace YemekTarifleriApp.Data.Concrete.EFCore
             new RecipeMember() {Recipe=Recipes[5], Member=Members[4]},
             new RecipeMember() {Recipe=Recipes[6], Member=Members[5]},
             new RecipeMember() {Recipe=Recipes[7], Member=Members[5]},
-            new RecipeMember() {Recipe=Recipes[0], Member=Members[6]},
-            new RecipeMember() {Recipe=Recipes[1], Member=Members[6]},
+            new RecipeMember() {Recipe=Recipes[0], Member=Members[4]},
+            new RecipeMember() {Recipe=Recipes[1], Member=Members[2]}
         };
     }
 }

@@ -10,3 +10,8 @@ C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifle
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.Bussiness\obj\Debug\net5.0\YemekTarifleriApp.Bussiness.dll
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.Bussiness\obj\Debug\net5.0\ref\YemekTarifleriApp.Bussiness.dll
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.Bussiness\obj\Debug\net5.0\YemekTarifleriApp.Bussiness.pdb
+C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.Bussiness\bin\Debug\net5.0\YemekTarifleriApp.Data.dll
+C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.Bussiness\bin\Debug\net5.0\YemekTarifleriApp.Entity.dll
+C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.Bussiness\bin\Debug\net5.0\YemekTarifleriApp.Data.pdb
+C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.Bussiness\bin\Debug\net5.0\YemekTarifleriApp.Entity.pdb
+C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.Bussiness\obj\Debug\net5.0\YemekTarifleriApp.Bussiness.csproj.CopyComplete

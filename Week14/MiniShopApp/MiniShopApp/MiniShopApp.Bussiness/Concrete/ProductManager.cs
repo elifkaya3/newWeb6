@@ -55,6 +55,11 @@ namespace MiniShopApp.Bussiness.Concrete
             return _productRepository.GetProductsByCategory(name);
         }
 
+        public List<Product> GetProductsByCategory(string name, int page, int pageSize)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Product> GetSearchResult(string searchString)
         {
             return _productRepository.GetSearchResult(searchString);

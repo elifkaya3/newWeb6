@@ -20,8 +20,24 @@ namespace MiniShopApp.WebUI.Controllers
         {
             return View();
         }
-        public IActionResult List(string category)
+        public IActionResult List(string category, int page=1)
         {
+            ViewBag.Message = "Ürün Bulunamadı";
+            ViewBag.AlertType = "warning";
+
+            //Ödevv:: 
+            //bu işi ister model mantığıyla kullanarak şu an olduğu gibi yapıyla ViewComponent mantığıyla çözün
+            //*************************
+
+            const int pageSize = 3; //bu dğeişken ka sayfada item görüntüleneciğini tutacak
+            var productListViewModel = new ProductListViewModel()
+            {
+                PageInfo = new PageInfo
+                {
+                    TotalItems = _productService.GetCountByCategory(category);
+                }
+            };
+
             return View(_productService.GetProductsByCategory(category));
         }
         
@@ -54,5 +70,5 @@ namespace MiniShopApp.WebUI.Controllers
             return View(_productService.GetSearchResult(q));
         }
 
-    }
+    }}
 }
