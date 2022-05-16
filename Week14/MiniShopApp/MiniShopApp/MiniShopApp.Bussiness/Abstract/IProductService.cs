@@ -19,6 +19,7 @@ namespace MiniShopApp.Bussiness.Abstract
         Product GetProductDetails(string url);
         List<Product> GetHomePageProduct();
         List<Product> GetSearchResult(string searchString);
+        int GetCountByCategory(string category);
 
     }
 }

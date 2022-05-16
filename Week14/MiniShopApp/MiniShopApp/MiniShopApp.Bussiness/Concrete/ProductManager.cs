@@ -11,7 +11,7 @@ namespace MiniShopApp.Bussiness.Concrete
 {
     public class ProductManager : IProductService
     {
-        IProductRepository _productRepository;
+        private IProductRepository _productRepository;
         public ProductManager(IProductRepository productRepository)
         {
             _productRepository = productRepository;
@@ -39,6 +39,11 @@ namespace MiniShopApp.Bussiness.Concrete
             throw new NotImplementedException();
         }
 
+        public int GetCountByCategory(string category)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Product> GetHomePageProduct()
         {
             return _productRepository.GetHomePageProduct();
@@ -46,18 +51,14 @@ namespace MiniShopApp.Bussiness.Concrete
 
         public Product GetProductDetails(string url)
         {
-            return _productRepository.GetProductsDetails(url);
+            return _productRepository.GetProductDetails(url);
         }
 
-
-        public List<Product> GetProductsByCategory(string name)
-        {
-            return _productRepository.GetProductsByCategory(name);
-        }
 
         public List<Product> GetProductsByCategory(string name, int page, int pageSize)
         {
-            throw new NotImplementedException();
+
+            return _productRepository.GetProductsByCategory(name, page, pageSize);
         }
 
         public List<Product> GetSearchResult(string searchString)

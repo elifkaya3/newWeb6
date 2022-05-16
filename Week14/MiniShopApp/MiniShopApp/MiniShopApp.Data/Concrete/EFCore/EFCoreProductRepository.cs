@@ -77,8 +77,9 @@ namespace MiniShopApp.Data.Concrete.EFCore
             }
         }
 
-        public Product GetProductsDetails(string url)
+        public Product GetProductDetails(string url)
         {
+
             using (var context = new MiniShopContext())
             {
                 return context.Products
@@ -90,6 +91,23 @@ namespace MiniShopApp.Data.Concrete.EFCore
             }
         }
 
-       
+        public int GetCountByCategory(string category)
+        {
+            using (var context = new MiniShopContext())
+            {
+                var products = context
+                    .Products
+                    .Where(i => i.IsApproved)
+                    .AsQueryable();
+                if (!string.IsNullOrEmpty(category))
+                {
+                    products = products
+                        .Include(i => i.ProductCategories)
+                        .ThenInclude(i => i.Category)
+                        .Where(i => i.ProductCategories.Any(a => a.Category.Url == category));
+                }
+                return products.Count();
+            }
+        }
     }
 }
