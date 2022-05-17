@@ -22,39 +22,44 @@
                 {
                     @foreach (var product in Model)
                     {
-                        <tr>
-                            <td>@product.ProductId</td>
-                            <td><img src="~/img/@product.ImageUrl" width="80" /></td>
-                            <td>@product.Name</td>
-                            <td>
-                                @if (product.IsHome)
-                                {
-                                    <i class="fa-solid fa-circle-check text-success"></i>
-                                }
-                                else
-                                {
-                                    <i class="fa-solid fa-circle-xmark text-danger"></i>
-                                }
-                            </td>
-                            <td>
-                                @if (product.IsApproved)
-                                {
-                                    <i class="fa-solid fa-circle-check text-success"></i>
-                                }
-                                else
-                                {
-                                    <i class="fa-solid fa-circle-xmark text-danger"></i>
-                                }
-                            </td>
-                            <td>@product.Price</td>
-                            <td>
-                                <a href="/admin/products/@product.ProductId" class="btn btn-sm btn-primary mr-1">Edit</a>
-                                <form action="/" method="post" class="d-inline" >
-                                    <input type="hidden" name="productId" value="@product.ProductId" />
-                                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
-                                </form>
-                            </td>
-                        </tr>
+                <tr>
+                    <td>@product.ProductId</td>
+                    <td><img src="~/img/@product.ImageUrl" width="80" /></td>
+                    <td>@product.Name</td>
+
+                    
+
+
+                    <td>
+                        @if (product.IsHome)
+                        {
+                            <i class="fa-solid fa-circle-check text-success"></i>
+                        }
+                        else
+                        {
+                            <i class="fa-solid fa-circle-xmark text-danger"></i>
+                        }
+                    </td>
+                    <td>
+                        @if (product.IsApproved)
+                        {
+                            @*<a class="btn btn-success" href="admin/ProductDetail">Aktif</a>*@
+                            <i class="fa-solid fa-circle-check text-success"></i>
+                        }
+                        else
+                        {
+                            <i class="fa-solid fa-circle-xmark text-danger"></i>
+                        }
+                    </td>
+                    <td>@product.Price</td>
+                    <td>
+                        <a href="/admin/products/@product.ProductId" class="btn btn-sm btn-primary mr-1">Edit</a>
+                        <form action="/Admin/ProductDelete" method="post" class="d-inline">
+                            <input type="hidden" name="productId" value="@product.ProductId" />
+                            <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                        </form>
+                    </td>
+                </tr>
                     }
                 }
                 else

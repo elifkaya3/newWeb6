@@ -131,5 +131,45 @@ namespace MiniShopApp.Data.Concrete.EfCore
             }
 
         }
+
+        public void Update(Product entity, int[] categoryIds)
+        {
+            using (var context = new MiniShopContext()) 
+            {
+                var product = context
+                    .Products
+                    .Include(i => i.ProductCategories)
+                    .FirstOrDefault(i => i.ProductId == entity.ProductId);
+                product.ProductId = entity.ProductId;
+                product.Name = entity.Name;
+                product.Url = entity.Url;
+                product.Price = entity.Price;
+                product.Description = entity.Description;
+                product.ImageUrl = entity.ImageUrl;
+                product.IsApproved = entity.IsApproved;
+                product.IsHome = entity.IsHome;
+                product.ProductCategories = categoryIds
+                    .Select(catId => new ProductCategory()
+                    {
+                        ProductId = entity.ProductId,
+                        CategoryId = catId
+
+                    }).ToList();
+                context.SaveChanges();
+            }
+        }
+
+        public Product GetByIdWithCategories(int id)
+        {
+            using (var context = new MiniShopContext())
+            {
+                return context
+                    .Products
+                    .Where(i => i.ProductId == id)
+                    .Include(i => i.ProductCategories)
+                    .ThenInclude(i => i.Category)
+                    .FirstOrDefault();
+            }
+        }
     }
 }
