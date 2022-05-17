@@ -8,6 +8,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using YemekTarifleriApp.Bussiness.Abstract;
+using YemekTarifleriApp.Bussiness.Concrete;
+using YemekTarifleriApp.Data.Abstract;
 using YemekTarifleriApp.Data.Concrete.EFCore;
 
 namespace YemekTarifleriApp.WebUI
@@ -24,6 +27,11 @@ namespace YemekTarifleriApp.WebUI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IRecipeRepository, EFCoreRecipeRepository>();
+            services.AddScoped<ICategoryRepository, EFCoreCategoryRepository>();
+            services.AddScoped<IRecipeService, RecipeManager>();
+            services.AddScoped<ICategoryService, CategoryManager>();
+
             services.AddControllersWithViews();
         }
 

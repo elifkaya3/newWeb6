@@ -70,3 +70,5 @@ C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifle
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\YemekTarifleriApp.WebUI.genruntimeconfig.cache
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\bin\Debug\net5.0\Humanizer.dll
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Shared\_Recipe.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\YemekTarifleri\RecipeDetails.cshtml.g.cs

@@ -1,8 +1,16 @@
-﻿@{
+﻿@model List<YemekTarifleriApp.Entity.Recipe>
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="col-md-9">
+    <div class="row">
+        @foreach (var recipe in Model)
+        {
+            <div class="col-md-4">
+                @await Html.PartialAsync("_Recipe", recipe)
+            </div>
+        }
+    </div>
 </div>
