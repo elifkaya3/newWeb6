@@ -34,20 +34,27 @@ namespace MiniShopApp.WebUI.Controllers
         [HttpPost]
         public IActionResult ProductCreate(ProductModel model, int[] categoryIds)
         {
-            //Buraya validation işlemleri ile ilgili bir kontrol gelecek.
-            var product = new Product()
+            //Burada validation işlemleri gerçekleşecek.
+            if (ModelState.IsValid)
             {
-                Name=model.Name,
-                Url=model.Url,
-                Price=model.Price,
-                Description=model.Description,
-                ImageUrl=model.ImageUrl,
-                IsApproved=model.IsApproved,
-                IsHome=model.IsHome
-            };
-            _productService.Create(product, categoryIds);
+                var product = new Product()
+                {
+                    Name = model.Name,
+                    Url = model.Url,
+                    Price = model.Price,
+                    Description = model.Description,
+                    ImageUrl = model.ImageUrl,
+                    IsApproved = model.IsApproved,
+                    IsHome = model.IsHome
+                };
+                _productService.Create(product, categoryIds);
 
-            return RedirectToAction("ProductList");
+                return RedirectToAction("ProductList");
+            }
+            ViewBag.Categories=_categoryService.GetAll();
+            return View(model);
+
+           
         }
         public IActionResult ProductEdit(int? id)
         {
