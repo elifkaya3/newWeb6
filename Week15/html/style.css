@@ -30,7 +30,7 @@
 }
  
 .menu > li {
-  background: #34495e;
+  background:#f89526;
   float: left;
   position: relative;
   transform: skewX(25deg);
@@ -46,15 +46,16 @@
 }		
 .search {
 display: flex;
-height: 2.85em;
+height: 2.90em;
  }
 .menu li:hover {
-  background: #e74c3c;
+  background: #cf3942;
 }		
  
 .menu > li > a {
   transform: skewX(-25deg);
   padding: 1em 2em;
+  color:#fff
 }
  
 /* Dropdown */
@@ -67,13 +68,13 @@ height: 2.85em;
 }
  
 .submenu li {
-  background-color: #34495e;
+  background-color: #f89526;
   position: relative;
   overflow: hidden;		
 }						
  
 .submenu > li > a {
-  padding: 1em 2em;			
+  padding: 1em 2em;		
 }
  
 .submenu > li::after {
@@ -82,7 +83,7 @@ height: 2.85em;
   top: -125%;
   height: 100%;
   width: 100%;			
-  box-shadow: 0 0 50px rgba(0, 0, 0, .9);			
+  box-shadow: 0 0 50px rgba(231, 78, 6, 0.9);			
 }		
  
 /* Odd stuff */
@@ -138,7 +139,7 @@ height: 2.85em;
   transform: skewX(-25deg) translateX(-15px);			
 }
 .icon{
-    height: 2.78em;
+    height: 2.94em;
     width: 2.78em;
     display: flex;
     align-items: center; 
