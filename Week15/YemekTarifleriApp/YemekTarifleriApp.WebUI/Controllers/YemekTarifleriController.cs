@@ -20,7 +20,7 @@ namespace YemekTarifleriApp.WebUI.Controllers
         }
         public IActionResult Details()
         {
-            return View();
+            return View(_recipeService.GetAll());
         }
     }
 }

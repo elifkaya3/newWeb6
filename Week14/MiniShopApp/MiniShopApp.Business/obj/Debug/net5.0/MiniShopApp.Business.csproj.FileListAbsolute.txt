@@ -15,3 +15,11 @@ C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.Business\obj\Debug\net5.0\MiniShopApp.Business.dll
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.Business\obj\Debug\net5.0\ref\MiniShopApp.Business.dll
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.Business\obj\Debug\net5.0\MiniShopApp.Business.pdb
+C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.Business\obj\Debug\net5.0\MiniShopApp.Business.csproj.AssemblyReference.cache
+C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.Business\obj\Debug\net5.0\MiniShopApp.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.Business\obj\Debug\net5.0\MiniShopApp.Business.AssemblyInfoInputs.cache
+C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.Business\obj\Debug\net5.0\MiniShopApp.Business.AssemblyInfo.cs
+C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.Business\obj\Debug\net5.0\MiniShopApp.Business.csproj.CoreCompileInputs.cache
+C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.Business\obj\Debug\net5.0\MiniShopApp.Business.dll
+C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.Business\obj\Debug\net5.0\ref\MiniShopApp.Business.dll
+C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.Business\obj\Debug\net5.0\MiniShopApp.Business.pdb

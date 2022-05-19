@@ -25,14 +25,20 @@ namespace MiniShopApp.Business.Concrete
             throw new NotImplementedException();
         }
 
-        public bool Create(Product entity, int[] categoryIds)
+        public void Create(Product entity, int[] categoryIds)
         {
-            if (Validation(entity))
-            {
-                _productRepository.Create(entity, categoryIds);
-
-            }
+            throw new NotImplementedException();
         }
+
+        //public bool Create(Product entity, int[] categoryIds)
+        //{
+        //    //if (Validation(entity))
+        //    //{
+        //        _productRepository.Create(entity, categoryIds);
+        //    return RedirectToAction("ProductList");
+
+        //    //}
+        //}
 
         public void Delete(Product entity)
         {
@@ -102,7 +108,7 @@ namespace MiniShopApp.Business.Concrete
             }
             if (entity.Price <= 0)
             {
-                ErrorMessage += $"Ürün fiyatı sıfırdan büyük olmalıdır.\n"
+                ErrorMessage += $"Ürün fiyatı sıfırdan büyük olmalıdır.\n";
             }
         }
     }

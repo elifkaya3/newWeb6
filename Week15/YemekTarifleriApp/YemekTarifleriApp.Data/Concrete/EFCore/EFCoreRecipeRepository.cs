@@ -16,5 +16,17 @@ namespace YemekTarifleriApp.Data.Concrete.EFCore
 
             throw new NotImplementedException();
         }
+        //public Recipe GetRecipeDetails(string url)
+        //{
+        //    using (var context = new RecipeAppContext())
+        //    {
+        //        return context
+        //            .Recipes
+        //            .Where(i => i.Url == url)
+        //            .Include(i => i.RecipeCategory)
+        //            .ThenInclude(i => i.Category)
+        //            .FirstOrDefault();
+        //    }
+        //}
     }
 }

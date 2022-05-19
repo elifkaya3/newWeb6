@@ -79,3 +79,6 @@ C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\ref\MiniShopApp.WebUI.dll
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\MiniShopApp.WebUI.pdb
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\MiniShopApp.WebUI.genruntimeconfig.cache
+C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\MiniShopApp.WebUI.dll
+C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\ref\MiniShopApp.WebUI.dll
+C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\MiniShopApp.WebUI.pdb
