@@ -146,3 +146,23 @@ height: 2.90em;
     justify-content:center;
     color: white;
 }
+ul{
+  list-style-type: none;
+}
+.footer{
+  display: flex;
+  justify-content: space-around;
+}
+footer{
+  background-color: #f89526;
+  color: #fff;
+}
+.fab {
+padding: 8px;
+font-size: 30px;
+width: 32px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+color:#fff;
+}

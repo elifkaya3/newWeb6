@@ -134,7 +134,6 @@ C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekT
 C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Shared\_Recipe.cshtml.g.cs
 C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\YemekTarifleri\RecipeDetails.cshtml.g.cs
 C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\YemekTarifleriApp.WebUI.RazorTargetAssemblyInfo.cache
@@ -151,3 +150,5 @@ C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifle
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Shared\_Member.cshtml.g.cs
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Shared\_RecipeDetails.cshtml.g.cs
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Recipe\Index.cshtml.g.cs
+C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Recipe\Index.cshtml.g.cs
+C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Shared\_RecipeDetails.cshtml.g.cs
