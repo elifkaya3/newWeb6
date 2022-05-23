@@ -27,27 +27,23 @@ namespace YemekTarifleriApp.WebUI.Controllers
         {
             ViewBag.Message = "Ürün bulunamadı";
             ViewBag.AlertType = "warning";
-            //ÖDEV:
-            //Bu işi ister model kullanarak şu an olduğu gibi partial yapıyla
-            //İsterseniz ise daha farklı bir yol olarak ViewComponent mantığıyla
-            //Çözün.
+           
 
-            //***********************************
-
-            const int pageSize = 5;//bu değişken her sayfada kaç item görüneceğini tutacak
-            int totalItems = _recipeService.GetCountByCategory(category);
-            var productListViewModel = new RecipeListViewModel()
-            {
-                PageInfo = new PageInfo
-                {
-                    TotalItems = totalItems,
-                    CurrentPage = page,
-                    ItemsPerPage = pageSize,
-                    CurrentCategory = category
-                },
-                Recipes = _recipeService.GetProductsByCategory(category, page, pageSize)
-            };
-            return View(productListViewModel);
+            //const int pageSize = 5;//bu değişken her sayfada kaç item görüneceğini tutacak
+            //int totalItems = _recipeService.GetCountByCategory(category);
+            //var productListViewModel = new RecipeListViewModel()
+            //{
+            //    PageInfo = new PageInfo
+            //    {
+            //        TotalItems = totalItems,
+            //        CurrentPage = page,
+            //        ItemsPerPage = pageSize,
+            //        CurrentCategory = category
+            //    },
+            //    Recipes = _recipeService.GetRecipesByCategory(category, page, pageSize)
+            //};
+            return View();
+            //return View(productListViewModel);
         }
     }
 }

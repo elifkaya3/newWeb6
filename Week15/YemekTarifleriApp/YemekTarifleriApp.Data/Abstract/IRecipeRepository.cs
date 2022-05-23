@@ -11,6 +11,7 @@ namespace YemekTarifleriApp.Data.Abstract
     {
         List<Recipe> GetRecipesByCategory(string name);
         List<Recipe> GetRecipesByCategory(string name, int page, int pageSize);
+        int GetCountByCategory(string category);
         //Recipe GetRecipeDetails(string url);
     }
 }
