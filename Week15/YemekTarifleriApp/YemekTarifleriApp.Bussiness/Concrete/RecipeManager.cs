@@ -36,6 +36,12 @@ namespace YemekTarifleriApp.Bussiness.Concrete
             throw new NotImplementedException();
         }
 
+        public List<Recipe> GetRecipesByCategory(string name, int page, int pageSize)
+        {
+            return _recipeRepository.GetRecipesByCategory(name, page, pageSize);
+
+        }
+
         //public Recipe GetRecipeDetails(string url)
         //{
         //    return _recipeRepository.GetRecipeDetails(url);

@@ -149,6 +149,7 @@ C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekT
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Member\Index.cshtml.g.cs
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Shared\_Member.cshtml.g.cs
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Shared\_RecipeDetails.cshtml.g.cs
-C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Recipe\Index.cshtml.g.cs
 C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Recipe\Index.cshtml.g.cs
 C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Shared\_RecipeDetails.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Shared\Component\Categories\Default.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week15\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Recipe\List.cshtml.g.cs

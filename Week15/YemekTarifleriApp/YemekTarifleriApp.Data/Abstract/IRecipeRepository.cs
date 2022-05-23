@@ -10,6 +10,7 @@ namespace YemekTarifleriApp.Data.Abstract
     public interface IRecipeRepository : IRepository<Recipe>
     {
         List<Recipe> GetRecipesByCategory(string name);
+        List<Recipe> GetRecipesByCategory(string name, int page, int pageSize);
         //Recipe GetRecipeDetails(string url);
     }
 }
