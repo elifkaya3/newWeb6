@@ -16,36 +16,6 @@ namespace YemekTarifleriApp.Data.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "5.0.16");
 
-            modelBuilder.Entity("CategoryRecipe", b =>
-                {
-                    b.Property<int>("CategoriesCategoryId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("RecipesRecipeId")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("CategoriesCategoryId", "RecipesRecipeId");
-
-                    b.HasIndex("RecipesRecipeId");
-
-                    b.ToTable("CategoryRecipe");
-                });
-
-            modelBuilder.Entity("MemberRecipe", b =>
-                {
-                    b.Property<int>("MembersMemberId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("RecipesRecipeId")
-                        .HasColumnType("INTEGER");
-
-                    b.HasKey("MembersMemberId", "RecipesRecipeId");
-
-                    b.HasIndex("RecipesRecipeId");
-
-                    b.ToTable("MemberRecipe");
-                });
-
             modelBuilder.Entity("YemekTarifleriApp.Entity.Category", b =>
                 {
                     b.Property<int>("CategoryId")
@@ -94,6 +64,12 @@ namespace YemekTarifleriApp.Data.Migrations
 
                     b.Property<string>("ImageUrl")
                         .HasColumnType("TEXT");
+
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IsHome")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("RecipeDescription")
                         .HasColumnType("TEXT");
@@ -145,46 +121,16 @@ namespace YemekTarifleriApp.Data.Migrations
                     b.ToTable("RecipeMembers");
                 });
 
-            modelBuilder.Entity("CategoryRecipe", b =>
-                {
-                    b.HasOne("YemekTarifleriApp.Entity.Category", null)
-                        .WithMany()
-                        .HasForeignKey("CategoriesCategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("YemekTarifleriApp.Entity.Recipe", null)
-                        .WithMany()
-                        .HasForeignKey("RecipesRecipeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("MemberRecipe", b =>
-                {
-                    b.HasOne("YemekTarifleriApp.Entity.Member", null)
-                        .WithMany()
-                        .HasForeignKey("MembersMemberId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("YemekTarifleriApp.Entity.Recipe", null)
-                        .WithMany()
-                        .HasForeignKey("RecipesRecipeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("YemekTarifleriApp.Entity.RecipeCategory", b =>
                 {
                     b.HasOne("YemekTarifleriApp.Entity.Category", "Category")
-                        .WithMany()
+                        .WithMany("RecipeCategories")
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("YemekTarifleriApp.Entity.Recipe", "Recipe")
-                        .WithMany()
+                        .WithMany("RecipeCategories")
                         .HasForeignKey("RecipeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -197,13 +143,13 @@ namespace YemekTarifleriApp.Data.Migrations
             modelBuilder.Entity("YemekTarifleriApp.Entity.RecipeMember", b =>
                 {
                     b.HasOne("YemekTarifleriApp.Entity.Member", "Member")
-                        .WithMany()
+                        .WithMany("RecipeMembers")
                         .HasForeignKey("MemberId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("YemekTarifleriApp.Entity.Recipe", "Recipe")
-                        .WithMany()
+                        .WithMany("RecipeMembers")
                         .HasForeignKey("RecipeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -211,6 +157,23 @@ namespace YemekTarifleriApp.Data.Migrations
                     b.Navigation("Member");
 
                     b.Navigation("Recipe");
+                });
+
+            modelBuilder.Entity("YemekTarifleriApp.Entity.Category", b =>
+                {
+                    b.Navigation("RecipeCategories");
+                });
+
+            modelBuilder.Entity("YemekTarifleriApp.Entity.Member", b =>
+                {
+                    b.Navigation("RecipeMembers");
+                });
+
+            modelBuilder.Entity("YemekTarifleriApp.Entity.Recipe", b =>
+                {
+                    b.Navigation("RecipeCategories");
+
+                    b.Navigation("RecipeMembers");
                 });
 #pragma warning restore 612, 618
         }

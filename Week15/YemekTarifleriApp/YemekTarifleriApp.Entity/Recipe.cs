@@ -15,7 +15,9 @@ namespace YemekTarifleriApp.Entity
         public string RecipeMaterial { get; set; }
         public string RecipeDescription { get; set; }
         public DateTime RecipeReleaseDate { get; set; }
-        public List<Member> Members { get; set; }
-        public List<Category> Categories { get; set; }
+        public List<RecipeMember> RecipeMembers { get; set; }
+        public bool IsApproved { get; set; }
+        public bool IsHome { get; set; }
+        public List<RecipeCategory> RecipeCategories { get; set; }
     }
 }

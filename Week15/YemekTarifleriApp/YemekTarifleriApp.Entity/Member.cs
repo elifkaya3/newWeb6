@@ -13,6 +13,6 @@ namespace YemekTarifleriApp.Entity
         public string MemberMail { get; set; }
         public string MemberUserName { get; set; }
         public char MemberPassword { get; set; }
-        public List<Recipe> Recipes { get; set; }
+        public List<RecipeMember> RecipeMembers { get; set; }
     }
 }

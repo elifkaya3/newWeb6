@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using YemekTarifleriApp.Entity;
 
 namespace YemekTarifleriApp.Data.Abstract
 {
@@ -13,6 +14,5 @@ namespace YemekTarifleriApp.Data.Abstract
         void Create(T entity);
         void Update(T entity);
         void Delete(T entity);
-
     }
 }

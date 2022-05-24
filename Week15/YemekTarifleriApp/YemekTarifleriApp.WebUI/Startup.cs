@@ -31,6 +31,9 @@ namespace YemekTarifleriApp.WebUI
             services.AddScoped<ICategoryRepository, EFCoreCategoryRepository>();
             services.AddScoped<IRecipeService, RecipeManager>();
             services.AddScoped<ICategoryService, CategoryManager>();
+            services.AddScoped<IMemberRepository, EFCoreMemberRepository>();
+            services.AddScoped<IMemberService, MemberManager>();
+
 
             services.AddControllersWithViews();
         }

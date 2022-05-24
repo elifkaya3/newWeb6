@@ -16,9 +16,8 @@ namespace YemekTarifleriApp.Bussiness.Abstract
         void Delete(Recipe entity);
         List<Recipe> GetRecipesByCategory(string name, int page, int pageSize);
         int GetCountByCategory(string category);
-
-
-        //Recipe GetRecipeDetails(string url);
-
+        Recipe GetRecipeDetails(string url);
+        List<Recipe> GetSearchResult(string searchString);
+        List<Recipe> GetHomePageRecipes();
     }
 }

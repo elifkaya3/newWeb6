@@ -20,7 +20,10 @@ namespace YemekTarifleriApp.Bussiness.Concrete
         {
             throw new NotImplementedException();
         }
-
+        public void Update(Recipe entity)
+        {
+            throw new NotImplementedException();
+        }
         public void Delete(Recipe entity)
         {
             throw new NotImplementedException();
@@ -33,12 +36,22 @@ namespace YemekTarifleriApp.Bussiness.Concrete
 
         public Recipe GetById(int id)
         {
-            throw new NotImplementedException();
+            return _recipeRepository.GetById(id);
         }
 
         public int GetCountByCategory(string category)
         {
             return _recipeRepository.GetCountByCategory(category);
+        }
+
+        public List<Recipe> GetHomePageRecipes()
+        {
+            return _recipeRepository.GetHomePageRecipes();
+        }
+
+        public Recipe GetRecipeDetails(string url)
+        {
+            return _recipeRepository.GetRecipeDetails(url);
         }
 
         public List<Recipe> GetRecipesByCategory(string name, int page, int pageSize)
@@ -47,14 +60,11 @@ namespace YemekTarifleriApp.Bussiness.Concrete
 
         }
 
-        //public Recipe GetRecipeDetails(string url)
-        //{
-        //    return _recipeRepository.GetRecipeDetails(url);
-        //}
-
-        public void Update(Recipe entity)
+        public List<Recipe> GetSearchResult(string searchString)
         {
-            throw new NotImplementedException();
+            return _recipeRepository.GetSearchResult(searchString);
         }
+
+        
     }
 }

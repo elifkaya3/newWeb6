@@ -11,6 +11,6 @@ namespace YemekTarifleriApp.Entity
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
         public string Url { get; set; }
-        public List<Recipe> Recipes { get; set; }
+        public List<RecipeCategory> RecipeCategories { get; set; }
     }
 }
