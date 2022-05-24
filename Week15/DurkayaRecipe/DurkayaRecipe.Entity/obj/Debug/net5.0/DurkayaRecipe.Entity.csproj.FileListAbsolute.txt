@@ -1,0 +1,12 @@
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Entity\obj\Debug\net5.0\DurkayaRecipe.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Entity\obj\Debug\net5.0\DurkayaRecipe.Entity.AssemblyInfoInputs.cache
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Entity\obj\Debug\net5.0\DurkayaRecipe.Entity.AssemblyInfo.cs
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Entity\obj\Debug\net5.0\DurkayaRecipe.Entity.csproj.CoreCompileInputs.cache
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Entity\bin\Debug\net5.0\DurkayaRecipe.Entity.deps.json
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Entity\bin\Debug\net5.0\DurkayaRecipe.Entity.dll
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Entity\bin\Debug\net5.0\ref\DurkayaRecipe.Entity.dll
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Entity\bin\Debug\net5.0\DurkayaRecipe.Entity.pdb
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Entity\obj\Debug\net5.0\DurkayaRecipe.Entity.dll
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Entity\obj\Debug\net5.0\ref\DurkayaRecipe.Entity.dll
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Entity\obj\Debug\net5.0\DurkayaRecipe.Entity.pdb
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Entity\obj\Debug\net5.0\DurkayaRecipe.Entity.csproj.AssemblyReference.cache
