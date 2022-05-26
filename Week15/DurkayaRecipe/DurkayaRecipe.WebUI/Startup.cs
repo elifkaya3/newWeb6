@@ -59,6 +59,18 @@ namespace DurkayaRecipe.WebUI
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                   name: "categorycreate",
+                   pattern: "category/create",
+                   defaults: new { controller = "Category", action = "CategoryCreate" }
+                   );
+
+                endpoints.MapControllerRoute(
+                   name: "categorylist",
+                   pattern: "category/list",
+                   defaults: new { controller = "Category", action = "CategoryList" }
+                   );
+
+                endpoints.MapControllerRoute(
                     name: "adminfoodcreate",
                     pattern: "admin/foods/create",
                     defaults: new { controller = "Admin", action = "FoodCreate" }

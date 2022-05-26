@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-danger border-bottom box-shadow mb-3">
+        <nav style="background-color: #bdc3c7" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">DurkayaRecipe</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -29,6 +29,9 @@
                         <li class="nav-item">
                             <a href="/admin/foods" class="nav-link text-dark">Admin Foods</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-controller="Category" asp-action="List" asp-route-category="">Categories</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -40,8 +43,8 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container-fluid bg-danger text-dark">
+    <footer  class="border-top footer text-muted">
+        <div style="background-color: #bdc3c7" class="container-fluid text-dark">
             &copy; 2022 - DurkayaRecipe.WebUI - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>

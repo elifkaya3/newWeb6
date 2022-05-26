@@ -50,7 +50,7 @@ namespace DurkayaRecipe.WebUI.Controllers
                 var food = new Food()
                 {
                     FoodName = model.FoodName,
-                    Url = url,
+                    Url = model.Url,
                     FoodMaterial = model.FoodMaterial,
                     ImageUrl = model.ImageUrl,
                     FoodDescription = model.FoodDescription,
@@ -105,8 +105,12 @@ namespace DurkayaRecipe.WebUI.Controllers
         }
 
         [HttpPost]
-        public IActionResult FoodEdit(FoodModel model, int[] categoryIds)
+        public IActionResult FoodEdit(FoodModel model, int[] categoryIds, IFormFile file)
         {
+            JobManager urlGenerate = new JobManager();
+            var url = urlGenerate.MakeUrl(model.FoodName);
+
+            model.ImageUrl = urlGenerate.UploadImage(file, url);
             var entity = _foodService.GetById(model.FoodId);
             entity.FoodName = model.FoodName;
             entity.FoodMaterial = model.FoodMaterial;

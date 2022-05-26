@@ -29,13 +29,13 @@
                             @if (string.IsNullOrEmpty(Model.PageInfo.CurrentCategory))
                             {
                                 <li class="page-item @(Model.PageInfo.CurrentPage==i+1 ? "active" : "")">
-                                    <a href="/products?page=@(i+1)" class="page-link">@(i+1)</a>
+                                    <a href="/foods?page=@(i+1)" class="page-link">@(i+1)</a>
                                 </li>
                             }
                             else
                             {
                                 <li class="page-item @(Model.PageInfo.CurrentPage==i+1 ? "active" : "")">
-                                    <a href="/products/@Model.PageInfo.CurrentCategory?page=@(i+1)" class="page-link">@(i+1)</a>
+                                    <a href="/foods/@Model.PageInfo.CurrentCategory?page=@(i+1)" class="page-link">@(i+1)</a>
                                 </li>
                             }
                         }

@@ -84,3 +84,5 @@ C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\Durkay
 C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.WebUI\bin\Debug\net5.0\System.IO.Pipelines.dll
 C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\Admin\FoodCreate.cshtml.g.cs
 C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\Admin\FoodEdit.cshtml.g.cs
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\Category\CategoryList.cshtml.g.cs
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.WebUI\obj\Debug\net5.0\Razor\Views\Category\CategoryCreate.cshtml.g.cs

@@ -21,6 +21,12 @@ namespace DurkayaRecipe.Business.Concrete
             throw new NotImplementedException();
         }
 
+        public void Create(Category entity, int[] categoryIds)
+        {
+            _categoryRepository.Create(entity, categoryIds);
+
+        }
+
         public void Delete(Category entity)
         {
             throw new NotImplementedException();
