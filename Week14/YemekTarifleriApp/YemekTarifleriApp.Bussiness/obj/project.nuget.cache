@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iR9Mfog8i/2896WDjcTBkHguHb3ee1p0DvCzTiTNfNYteg9lhqJ9BOia+TG4D7np0bUE8iYGAqkJdPMkSKAyKg==",
+  "dgSpecHash": "FI4aXKcGqak30psYdt9k6YU/aeglY3VpO42SfaYxsL+oM18svd+3E7DtpBXT9yqkR352qeOtZFmdguT1xl2Xgw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Web ve Mobil Prog\\Desktop\\newWeb6\\Week15\\YemekTarifleriApp\\YemekTarifleriApp.Bussiness\\YemekTarifleriApp.Bussiness.csproj",
+  "projectFilePath": "C:\\Users\\Web ve Mobil Prog\\Desktop\\Projects_ElifKaya\\newWeb6\\Week14\\YemekTarifleriApp\\YemekTarifleriApp.Bussiness\\YemekTarifleriApp.Bussiness.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Web ve Mobil Prog\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.16\\microsoft.data.sqlite.core.5.0.16.nupkg.sha512",
     "C:\\Users\\Web ve Mobil Prog\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.6\\microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",

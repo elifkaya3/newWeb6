@@ -6,11 +6,10 @@
     </div>
     <div class="card-body">
         <h5 class="card-title">@Model.RecipeName</h5>
-        @*<p class="card-text">@Model.RecipeDescription</p>*@
-        <a asp-controller="YemekTarifleri"
+        <a asp-controller="Recipe"
            asp-action="Details"
            asp-route-url=@Model.Url
-           class="btn btn-sm btn-primary">Tarif Detayları
-        </a>
+           class="btn btn-sm btn-primary">
+           Tarif Detayları </a>
     </div>
 </div>

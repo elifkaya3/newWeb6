@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Web ve Mobil Prog\\Desktop\\newWeb6\\Week15\\YemekTarifleriApp\\YemekTarifleriApp.Entity\\YemekTarifleriApp.Entity.csproj",
+      "projectUniqueName": "C:\\Users\\Web ve Mobil Prog\\Desktop\\Projects_ElifKaya\\newWeb6\\Week14\\YemekTarifleriApp\\YemekTarifleriApp.Entity\\YemekTarifleriApp.Entity.csproj",
       "projectName": "YemekTarifleriApp.Entity",
-      "projectPath": "C:\\Users\\Web ve Mobil Prog\\Desktop\\newWeb6\\Week15\\YemekTarifleriApp\\YemekTarifleriApp.Entity\\YemekTarifleriApp.Entity.csproj",
+      "projectPath": "C:\\Users\\Web ve Mobil Prog\\Desktop\\Projects_ElifKaya\\newWeb6\\Week14\\YemekTarifleriApp\\YemekTarifleriApp.Entity\\YemekTarifleriApp.Entity.csproj",
       "packagesPath": "C:\\Users\\Web ve Mobil Prog\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Web ve Mobil Prog\\Desktop\\newWeb6\\Week15\\YemekTarifleriApp\\YemekTarifleriApp.Entity\\obj\\",
+      "outputPath": "C:\\Users\\Web ve Mobil Prog\\Desktop\\Projects_ElifKaya\\newWeb6\\Week14\\YemekTarifleriApp\\YemekTarifleriApp.Entity\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Web ve Mobil Prog\\AppData\\Roaming\\NuGet\\NuGet.Config",

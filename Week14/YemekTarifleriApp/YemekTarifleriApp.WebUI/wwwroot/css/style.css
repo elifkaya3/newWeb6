@@ -13,9 +13,9 @@ ul{
   display: flex;
   justify-content: space-around;
 }
-footer{
-  background-color: #f89526;
-  color: #fff;
+footer {
+    background-color: #f0932b;
+    color: #fff;
 }
 .fab {
 padding: 8px;
@@ -25,4 +25,12 @@ text-align: center;
 text-decoration: none;
 margin: 5px 2px;
 color:#fff;
+}
+body {
+    background-color: #ffdd59;
+    /*background-image: https://st2.depositphotos.com/11158102/48827/i/600/depositphotos_488272338-stock-photo-ripe-fresh-yellow-orange-tomatoes.jpg;*/
+}
+.card {
+    background-color :#f5f6fa;
+    
 }
