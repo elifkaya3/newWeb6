@@ -20,6 +20,8 @@ namespace YemekTarifleriApp.Bussiness.Abstract
         List<Recipe> GetSearchResult(string searchString);
         List<Recipe> GetHomePageRecipes();
         Recipe GetByIdWithCategories(int id);
+        void Create(Recipe entity, int[] categoryIds);
+        void Update(Recipe entity, int[] categoryIds);
 
     }
 }

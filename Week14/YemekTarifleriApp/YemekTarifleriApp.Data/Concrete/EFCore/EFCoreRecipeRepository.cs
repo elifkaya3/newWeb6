@@ -137,5 +137,45 @@ namespace YemekTarifleriApp.Data.Concrete.EFCore
                     .ToList();
             }
         }
+
+        public void Create(Recipe entity, int[] categoryIds)
+        {
+            using (var context = new RecipeAppContext())
+            {
+                context.Recipes.Add(entity);
+                context.SaveChanges();
+                entity.RecipeCategories = categoryIds
+                    .Select(catId => new RecipeCategory
+                    {
+                        RecipeId = entity.RecipeId,
+                        CategoryId = catId
+                    }).ToList();
+                context.SaveChanges();
+            }
+        }
+
+        public void Update(Recipe entity, int[] categoryIds)
+        {
+            using (var context = new RecipeAppContext())
+            {
+                var recipe = context
+                    .Recipes
+                    .Include(i => i.RecipeCategories)
+                    .FirstOrDefault(i => i.RecipeId == entity.RecipeId);
+                recipe.RecipeName = entity.RecipeName;
+                recipe.RecipeDescription = entity.RecipeDescription;
+                recipe.Url = entity.Url;
+                recipe.ImageUrl = entity.ImageUrl;
+                recipe.IsApproved = entity.IsApproved;
+                recipe.IsHome = entity.IsHome;
+                recipe.RecipeCategories = categoryIds
+                    .Select(catId => new RecipeCategory()
+                    {
+                        RecipeId = entity.RecipeId,
+                        CategoryId = catId
+                    }).ToList();
+                context.SaveChanges();
+            }
+        }
     }
 }

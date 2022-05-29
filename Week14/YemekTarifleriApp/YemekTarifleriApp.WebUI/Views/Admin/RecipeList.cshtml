@@ -1,0 +1,67 @@
+﻿@model List<YemekTarifleriApp.Entity.Recipe>
+
+<div class="row">
+    <div class="col-md-9">
+        <h5 class="display-3 text-light">Admin Recipe Managament </h5>
+        <hr />
+        <a href="/admin/recipes/create" class="btn btn-sm btn-success mb-3">Yeni Tarif Ekle</a>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Image</th>
+                    <th>Recipe Name</th>
+                    <th>Home</th>
+                    <th>Approved</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Count > 0)
+                {
+                    @foreach (var recipe in Model)
+                    {
+                        <tr>
+                            <td>@recipe.RecipeId</td>
+                            <td><img src="~/img/@recipe.ImageUrl" width="70" /></td>
+                            <td>@recipe.RecipeName</td>
+                            <td>
+                                @if (recipe.IsHome)
+                                {
+                                    <i class="fa-solid fa-circle-check text-success"></i>
+
+                                }
+                                else
+                                {
+                                    <i class="fa-solid fa-circle-xmark text-danger"></i>
+
+                                }
+                            </td>
+                            <td>
+                                @if (recipe.IsApproved)
+                                {
+                                    <i class="fa-solid fa-square-check text-success"></i>
+                                }
+                                else
+                                {
+                                    <i class="fa-solid fa-circle-xmark text-danger"></i>
+                                }
+                            </td>
+                            <td>
+                                <a href="/admin/recipes/@recipe.RecipeId" class="btn btn-sm btn-primary mr-1">Edit Recipe</a>
+                                <form action="/AdminRecipeDelete" method="post" class="d-inline">
+                                    <input type="hidden" name="recipeId" value="@recipe.RecipeId" />
+                                    <button type="submit" class="btn btn-sm btn-danger">Delete Recipe</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

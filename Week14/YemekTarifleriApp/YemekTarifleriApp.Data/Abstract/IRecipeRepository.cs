@@ -14,6 +14,8 @@ namespace YemekTarifleriApp.Data.Abstract
         Recipe GetRecipeDetails(string url);
         List<Recipe> GetSearchResult(string searchString);
         List<Recipe> GetHomePageRecipes();
-        Recipe GetByIdWithCategories(int id);
+        Recipe GetByIdWithCategories(int id); 
+        void Create(Recipe entity, int[] categoryIds);
+        void Update(Recipe entity, int[] categoryIds);
     }
 }

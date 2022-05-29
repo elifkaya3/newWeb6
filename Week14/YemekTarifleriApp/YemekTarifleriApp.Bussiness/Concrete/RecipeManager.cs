@@ -23,7 +23,7 @@ namespace YemekTarifleriApp.Bussiness.Concrete
 
         public void Delete(Recipe entity)
         {
-            throw new NotImplementedException();
+            _recipeRepository.Delete(entity);
         }
 
         public List<Recipe> GetAll()
@@ -70,6 +70,16 @@ namespace YemekTarifleriApp.Bussiness.Concrete
         public Recipe GetByIdWithCategories(int id)
         {
             return _recipeRepository.GetByIdWithCategories(id);
+        }
+
+        public void Create(Recipe entity, int[] categoryIds)
+        {
+            _recipeRepository.Create(entity, categoryIds);
+        }
+
+        public void Update(Recipe entity, int[] categoryIds)
+        {
+            _recipeRepository.Update(entity, categoryIds);
         }
     }
 }
