@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -59,11 +60,11 @@ namespace YemekTarifleriApp.WebUI.Controllers
                 };
                 _recipeService.Create(recipe, categoryIds);
 
-                CreateMessage("Tarifiniz başarıyla eklenmiştir", "success");
+                //CreateMessage("Tarifiniz başarıyla eklenmiştir", "success");
                 return RedirectToAction("RecipeList");
             }
 
-            CreateMessage("Tarifiniz kaydedililirken bir sorun oluştu. Lütfen formu kontrol edip, yeniden deneyiniz.", "warning");
+            //CreateMessage("Tarifiniz kaydedililirken bir sorun oluştu. Lütfen formu kontrol edip, yeniden deneyiniz.", "warning");
             ViewBag.Categories = _categoryService.GetAll();
 
             if (categoryIds.Length > 0)
@@ -133,14 +134,6 @@ namespace YemekTarifleriApp.WebUI.Controllers
             return RedirectToAction("RecipeList");
         }
 
-        private void CreateMessage(string message, string alertType)
-        {
-            var mesg = new AlertMessage()
-            {
-                Message = message,
-                AlertType = alertType
-            };
-            TempData["Message"] = JsonConvert.SerializeObject(mesg);
-        }
+       
     }
 }
