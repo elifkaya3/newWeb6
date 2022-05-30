@@ -60,11 +60,8 @@ namespace YemekTarifleriApp.WebUI.Controllers
                 };
                 _recipeService.Create(recipe, categoryIds);
 
-                //CreateMessage("Tarifiniz başarıyla eklenmiştir", "success");
                 return RedirectToAction("RecipeList");
             }
-
-            //CreateMessage("Tarifiniz kaydedililirken bir sorun oluştu. Lütfen formu kontrol edip, yeniden deneyiniz.", "warning");
             ViewBag.Categories = _categoryService.GetAll();
 
             if (categoryIds.Length > 0)
