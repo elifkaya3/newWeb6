@@ -37,9 +37,31 @@ namespace MiniShopApp.WebUI.Controllers
                 );
         }
         [HttpPost]
-        public IActionResult Login(LoginModel model)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Login(LoginModel model)
         {
             //Burada login işlemlerini gerçekleştireceğiz.
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            var user = await _userManager.FindByNameAsync(model.UserName);
+            if (user == null)
+            {
+                ModelState.AddModelError("","Böyle bir kullanıcı bulunamadı.");
+            }
+            if (!await _userManager.IsEmailConfirmedAsync(user))
+            {
+                ModelState.AddModelError("", "Hesabınız onaylı değil.Lütfen mail adresinizi kontrol edip tekrar deneyiniz");
+                return View(model);
+            }
+            var result = await _signInManager.PasswordSignInAsync(user,model.Password,true,false);
+            if (result.Succeeded)
+            {
+                return RedirectToAction(model.ReturnUrl ?? "~/");
+            }
+            ModelState.AddModelError("", "Kullanıcı adı veya parola hatalı");
             return View(); 
         }
 
@@ -48,6 +70,8 @@ namespace MiniShopApp.WebUI.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public async Task<IActionResult> Register(RegisterModel model)
         {
             if (!ModelState.IsValid)
@@ -101,7 +125,11 @@ namespace MiniShopApp.WebUI.Controllers
             CreateMessage("Hesabınız onaylanamadı. Lütfen bilgileri kontrol ederek, yeniden deneyiniz!","warning");
             return View();
         }
-
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+            return Redirect("~/");
+        }
 
         private void CreateMessage(string message, string alertType)
         {

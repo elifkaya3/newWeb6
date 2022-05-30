@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -54,6 +55,21 @@ namespace MiniShopApp.WebUI
                 //SignIn
                 options.SignIn.RequireConfirmedEmail = true;
 
+            });
+
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.LoginPath = "/account/login";
+                options.LogoutPath = "/account/logout";
+                options.AccessDeniedPath = "/account/accessdenied";
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
+                options.SlidingExpiration = true;
+                options.Cookie = new CookieBuilder()
+                {
+                    HttpOnly = true,
+                    Name="MiniShopApp.Security.Cookie",
+                    SameSite=SameSiteMode.Strict
+                };
             });
 
             services.AddScoped<IEmailSender, SmtpEmailSender>(i => new SmtpEmailSender(
