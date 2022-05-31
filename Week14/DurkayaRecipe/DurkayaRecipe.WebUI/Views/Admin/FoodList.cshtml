@@ -1,0 +1,68 @@
+﻿@model List<Food>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h6 class="display-4 text-light">Admin Food Managament</h6>
+            <hr />
+            <a href="/admin/foods/create" class="btn btn-sm btn-light mb-1">Create Food</a>
+
+            <table class="table table-bordered bg-light">
+                <thead>
+                    <tr>
+                        <th witdh="30">ID</th>
+                        <th witdh="100">Image</th>
+                        <th>Name</th>
+                        <th witdh="30">Home</th>
+                        <th witdh="30">Approved</th>
+                        <th witdh="30">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.Count > 0)
+                    {
+                        @foreach (var food in Model)
+                        {
+                            <tr>
+                                <td>@food.FoodId</td>
+                                <td><img src="~/img/@food.ImageUrl" width="80" /></td>
+                                <td>@food.FoodName</td>
+                                <td>
+                                    @if (food.IsHome)
+                                    {
+                                        <i class="fa-solid fa-circle-check text-success"></i>
+
+                                    }
+                                    else
+                                    {
+                                        <i class="fa-solid fa-circle-xmark text-danger"></i>
+
+                                    }
+                                </td>
+                                <td>
+                                    @if (food.IsApproved)
+                                    {
+                                        <i class="fa-solid fa-circle-check text-success"></i>
+                                    }
+                                    else
+                                    {
+                                        <i class="fa-solid fa-circle-xmark text-danger"></i>
+                                    }
+                                </td>
+                                <td>
+                                    <a href="/admin/foods/@food.FoodId" class="btn btn-sm btn-primary mr-1">Edit</a>
+                                    <form action="/AdminFoodDelete" method="post" class="d-inline">
+                                        <input type="hidden" name="foodId" value="@food.FoodId"/>
+                                        <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        //ürün yoksa
+                    }
+                </tbody>
+            </table>    
+        </div>
+    </div>

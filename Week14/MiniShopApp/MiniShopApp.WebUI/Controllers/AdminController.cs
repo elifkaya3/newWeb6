@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using MiniShopApp.Business.Abstract;
 using MiniShopApp.Business.Concrete;
 using MiniShopApp.Entity;
+using MiniShopApp.WebUI.Identity;
 using MiniShopApp.WebUI.Models;
 using Newtonsoft.Json;
 using System;
@@ -20,11 +22,43 @@ namespace MiniShopApp.WebUI.Controllers
     {
         private readonly IProductService _productService;
         private readonly ICategoryService _categoryService;
-        public AdminController(IProductService productService, ICategoryService categoryService)
+
+
+        private RoleManager<IdentityRole> _roleManager;
+        private UserManager<User> _userManager;
+
+        public AdminController(IProductService productService, ICategoryService categoryService, RoleManager<IdentityRole> roleManager, UserManager<User> userManager)
         {
             _productService = productService;
             _categoryService = categoryService;
+            _roleManager = roleManager;
+            _userManager = userManager;
         }
+        public IActionResult RoleList()
+        {
+            return View();
+        } 
+        public IActionResult RoleCreate()
+        {
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> RoleCreate(RoleModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                var result = _roleManager.CreateAsync(
+                    new IdentityRole(model.Name)
+                    );
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("RoleList");
+                }
+            }
+
+            return View();
+        }
+       
         public IActionResult Index()
         {
             return View();
@@ -43,7 +77,7 @@ namespace MiniShopApp.WebUI.Controllers
         [HttpPost]
         public IActionResult ProductCreate(ProductModel model, int[] categoryIds, IFormFile file)
         {
-            if (ModelState.IsValid && categoryIds.Length>0 && file!=null)
+            if (ModelState.IsValid && categoryIds.Length > 0 && file != null)
             {
                 var url = JobManager.MakeUrl(model.Name);
                 model.ImageUrl = JobManager.UploadImage(file, url);
@@ -64,7 +98,7 @@ namespace MiniShopApp.WebUI.Controllers
             }
             //İşler yolunda gitmediyse
 
-            if (categoryIds.Length>0)
+            if (categoryIds.Length > 0)
             {
                 model.SelectedCategories = categoryIds.Select(catId => new Category()
                 {
@@ -76,7 +110,7 @@ namespace MiniShopApp.WebUI.Controllers
                 ViewBag.CategoryMessage = "Lütfen en az bir kategori seçiniz!";
             }
 
-            if (file==null)
+            if (file == null)
             {
                 ViewBag.ImageMessage = "Lütfen bir resim seçiniz!";
             }

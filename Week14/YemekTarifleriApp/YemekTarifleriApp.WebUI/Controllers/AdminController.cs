@@ -59,6 +59,7 @@ namespace YemekTarifleriApp.WebUI.Controllers
                     IsHome = model.IsHome
                 };
                 _recipeService.Create(recipe, categoryIds);
+                
 
                 return RedirectToAction("RecipeList");
             }

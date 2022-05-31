@@ -1,0 +1,68 @@
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Business.deps.json
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Business.dll
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Business\bin\Debug\net5.0\ref\DurkayaRecipe.Business.dll
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Business.pdb
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.AssemblyInfoInputs.cache
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.AssemblyInfo.cs
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.csproj.CoreCompileInputs.cache
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.dll
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Business\obj\Debug\net5.0\ref\DurkayaRecipe.Business.dll
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.pdb
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Data.dll
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Entity.dll
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Data.pdb
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Entity.pdb
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.csproj.AssemblyReference.cache
+C:\Users\PATRON\Desktop\Visual Studio\Projeler\Yemek Tarifi\DurkayaRecipe\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.csproj.CopyComplete
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Business.deps.json
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Business.dll
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.Business\bin\Debug\net5.0\ref\DurkayaRecipe.Business.dll
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Business.pdb
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Data.dll
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Entity.dll
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Data.pdb
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Entity.pdb
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.csproj.AssemblyReference.cache
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.AssemblyInfoInputs.cache
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.AssemblyInfo.cs
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.csproj.CoreCompileInputs.cache
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.csproj.CopyComplete
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.dll
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.Business\obj\Debug\net5.0\ref\DurkayaRecipe.Business.dll
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.pdb
+C:\Users\PATRON\Desktop\FrontEnd-2203-03-master\DurkayaRecipe2\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Business.deps.json
+C:\Users\PATRON\Desktop\FrontEnd-2203-03-master\DurkayaRecipe2\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Business.dll
+C:\Users\PATRON\Desktop\FrontEnd-2203-03-master\DurkayaRecipe2\DurkayaRecipe.Business\bin\Debug\net5.0\ref\DurkayaRecipe.Business.dll
+C:\Users\PATRON\Desktop\FrontEnd-2203-03-master\DurkayaRecipe2\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Business.pdb
+C:\Users\PATRON\Desktop\FrontEnd-2203-03-master\DurkayaRecipe2\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Data.dll
+C:\Users\PATRON\Desktop\FrontEnd-2203-03-master\DurkayaRecipe2\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Entity.dll
+C:\Users\PATRON\Desktop\FrontEnd-2203-03-master\DurkayaRecipe2\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Data.pdb
+C:\Users\PATRON\Desktop\FrontEnd-2203-03-master\DurkayaRecipe2\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Entity.pdb
+C:\Users\PATRON\Desktop\FrontEnd-2203-03-master\DurkayaRecipe2\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.csproj.AssemblyReference.cache
+C:\Users\PATRON\Desktop\FrontEnd-2203-03-master\DurkayaRecipe2\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PATRON\Desktop\FrontEnd-2203-03-master\DurkayaRecipe2\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.AssemblyInfoInputs.cache
+C:\Users\PATRON\Desktop\FrontEnd-2203-03-master\DurkayaRecipe2\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.AssemblyInfo.cs
+C:\Users\PATRON\Desktop\FrontEnd-2203-03-master\DurkayaRecipe2\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.csproj.CoreCompileInputs.cache
+C:\Users\PATRON\Desktop\FrontEnd-2203-03-master\DurkayaRecipe2\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.csproj.CopyComplete
+C:\Users\PATRON\Desktop\FrontEnd-2203-03-master\DurkayaRecipe2\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.dll
+C:\Users\PATRON\Desktop\FrontEnd-2203-03-master\DurkayaRecipe2\DurkayaRecipe.Business\obj\Debug\net5.0\ref\DurkayaRecipe.Business.dll
+C:\Users\PATRON\Desktop\FrontEnd-2203-03-master\DurkayaRecipe2\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.pdb
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Business.deps.json
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Business.dll
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.Business\bin\Debug\net5.0\ref\DurkayaRecipe.Business.dll
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Business.pdb
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Data.dll
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Entity.dll
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Data.pdb
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.Business\bin\Debug\net5.0\DurkayaRecipe.Entity.pdb
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.csproj.AssemblyReference.cache
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.AssemblyInfoInputs.cache
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.AssemblyInfo.cs
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.csproj.CoreCompileInputs.cache
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.csproj.CopyComplete
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.dll
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.Business\obj\Debug\net5.0\ref\DurkayaRecipe.Business.dll
+C:\Users\PATRON\Desktop\DurkayaRecipe\DurkayaRecipe2\DurkayaRecipe.Business\obj\Debug\net5.0\DurkayaRecipe.Business.pdb

@@ -1,0 +1,39 @@
+﻿@model CategoryModel
+<h5 class="display-4 text-light">Create Category</h5>
+<hr />
+<form asp-controller="Admin" asp-action="CategoryCreate" enctype="multipart/form-data" method="post">
+    <div class="row">
+        <br />
+        <div class="col-md-8">
+            <div class="form-group row mb-2">
+                <label class="col-form-label col-sm-3 text-light">Category Name:</label>
+                <div class="col-sm-9">
+                    <input type="text" asp-for="CategoryName" />
+                    <span asp-validation-for="CategoryName" class="text-danger"></span>
+                </div>
+            </div>
+
+            @*<div class="form-group row mb-2">
+                    <label class="col-form-label col-sm-3">URL:</label>
+                    <div class="col-sm-9">
+                        <input type="text" asp-for="Url" />
+                    </div>
+                </div>*@
+
+            <div class="form-group row mb-2">
+                <label class="col-form-label col-sm-3 text-light">Category Description:</label>
+                <div class="col-sm-9">
+                    <input type="text" asp-for="CategoryDescription" />
+                    <span asp-validation-for="CategoryDescription" class="text-danger"></span>
+                </div>
+            </div>
+
+
+            <div class="form-group row mb-2">
+                <div class="col-sm-9">
+                    <button type="submit" class="btn btn-light">Save Category</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

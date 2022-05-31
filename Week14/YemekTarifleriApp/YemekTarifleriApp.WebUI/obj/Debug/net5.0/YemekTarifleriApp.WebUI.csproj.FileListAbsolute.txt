@@ -399,3 +399,4 @@ C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifle
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.WebUI\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Admin\RecipeCreate.cshtml.g.cs
 C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Admin\RecipeList.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Admin\RecipeEdit.cshtml.g.cs
