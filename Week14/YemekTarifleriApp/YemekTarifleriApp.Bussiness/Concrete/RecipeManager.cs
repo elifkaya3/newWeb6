@@ -33,7 +33,7 @@ namespace YemekTarifleriApp.Bussiness.Concrete
 
         public Recipe GetById(int id)
         {
-            throw new NotImplementedException();
+            return _recipeRepository.GetById(id);
         }
 
         public int GetCountByCategory(string category)

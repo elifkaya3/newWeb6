@@ -6,13 +6,13 @@
         <hr />
         <a href="/admin/recipecreate/create" class="btn btn-sm btn-success mb-3">Yeni Tarif Ekle</a>
 
-        <table>
+        <table class="table">
             <thead>
                 <tr class="m-4">
                     <th>Id</th>
                     <th>Resim:</th>
                     <th>Tarif İsmi</th>
-                    <th>Anasayafa</th>
+                    <th>Anasayfa</th>
                     <th>Onay</th>
                     <th>İşlemler</th>
                 </tr>
@@ -24,33 +24,33 @@
                     {
                         <tr>
                             <td>@recipe.RecipeId</td>
-                            <td><img src="~/img/@recipe.ImageUrl" width="70" /></td>
+                            <td><img src="~/img/@recipe.ImageUrl" width="160" /></td>
                             <td>@recipe.RecipeName</td>
                             <td>
                                 @if (recipe.IsHome)
                                 {
-                                    <i class="fa-solid fa-circle-check text-success"></i>
+                                    <i class="fa-solid fa-square-check text-success"></i>
 
                                 }
                                 else
                                 {
-                                    <i class="fa-solid fa-circle-xmark text-danger"></i>
+                                    <i class="fa-solid fa-square-xmark text-danger"></i>
 
                                 }
                             </td>
                             <td>
                                 @if (recipe.IsApproved)
                                 {
-                                    <i class="fa-solid fa-circle-check text-success"></i>
+                                    <i class="fa-solid fa-square-check text-success"></i>
                                 }
                                 else
                                 {
-                                    <i class="fa-solid fa-circle-xmark text-danger"></i>
+                                    <i class="fa-solid fa-square-xmark text-danger"></i>
                                 }
                             </td>
                             <td>
                                 <a href="/admin/recipeedit/@recipe.RecipeId" class="btn btn-sm btn-primary mr-1">Tarifi Düzenle</a>
-                                <form action="/AdminRecipeDelete" method="post" class="d-inline">
+                                <form action="/Admin/RecipeDelete" method="post" class="d-inline">
                                     <input type="hidden" name="recipeId" value="@recipe.RecipeId" />
                                     <button type="submit" class="btn btn-sm btn-danger">Tarifi Sil</button>
                                 </form>

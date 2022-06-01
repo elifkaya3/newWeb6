@@ -21,9 +21,14 @@ namespace YemekTarifleriApp.Bussiness.Concrete
             throw new NotImplementedException();
         }
 
+        public void Create(Category entity, int[] categoryIds)
+        {
+            _categoryRepository.Create(entity, categoryIds);
+        }
+
         public void Delete(Category entity)
         {
-            throw new NotImplementedException();
+            _categoryRepository.Delete(entity);
         }
 
         public List<Category> GetAll()
@@ -33,12 +38,17 @@ namespace YemekTarifleriApp.Bussiness.Concrete
 
         public Category GetById(int id)
         {
-            throw new NotImplementedException();
+            return _categoryRepository.GetById(id);
         }
 
         public void Update(Category entity)
         {
             throw new NotImplementedException();
+        }
+
+        public void Update(Category entity, int[] categoryIds)
+        {
+            _categoryRepository.Update(entity, categoryIds);
         }
     }
 }

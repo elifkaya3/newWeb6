@@ -78,7 +78,6 @@ C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekT
 C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.Data\bin\Debug\net5.0\YemekTarifleriApp.Data.pdb
 C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.Data\bin\Debug\net5.0\YemekTarifleriApp.Entity.dll
 C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.Data\bin\Debug\net5.0\YemekTarifleriApp.Entity.pdb
-C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.Data\obj\Debug\net5.0\YemekTarifleriApp.Data.csproj.AssemblyReference.cache
 C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.Data\obj\Debug\net5.0\YemekTarifleriApp.Data.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.Data\obj\Debug\net5.0\YemekTarifleriApp.Data.AssemblyInfoInputs.cache
 C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.Data\obj\Debug\net5.0\YemekTarifleriApp.Data.AssemblyInfo.cs
@@ -88,3 +87,4 @@ C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekT
 C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.Data\obj\Debug\net5.0\ref\YemekTarifleriApp.Data.dll
 C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.Data\obj\Debug\net5.0\YemekTarifleriApp.Data.pdb
 C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.Data\obj\Debug\net5.0\YemekTarifleriApp.Data.genruntimeconfig.cache
+C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.Data\obj\Debug\net5.0\YemekTarifleriApp.Data.csproj.AssemblyReference.cache

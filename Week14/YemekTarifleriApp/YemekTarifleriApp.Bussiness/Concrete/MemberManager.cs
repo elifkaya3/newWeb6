@@ -16,14 +16,15 @@ namespace YemekTarifleriApp.Bussiness.Concrete
         {
             _memberRepository = memberRepository;
         }
+       
         public void Create(Member entity)
         {
-            throw new NotImplementedException();
+            _memberRepository.Create(entity);
         }
 
         public void Delete(Member entity)
         {
-            throw new NotImplementedException();
+            _memberRepository.Delete(entity);
         }
 
         public List<Member> GetAll()
@@ -33,12 +34,14 @@ namespace YemekTarifleriApp.Bussiness.Concrete
 
         public Member GetById(int id)
         {
-            throw new NotImplementedException();
+            return _memberRepository.GetById(id);
         }
 
         public void Update(Member entity)
         {
-            throw new NotImplementedException();
+            _memberRepository.Update(entity);
         }
+
+      
     }
 }

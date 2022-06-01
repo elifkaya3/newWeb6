@@ -14,5 +14,7 @@ namespace YemekTarifleriApp.Bussiness.Abstract
         void Create(Category entity);
         void Update(Category entity);
         void Delete(Category entity);
+        void Create(Category entity, int[] categoryIds);
+        void Update(Category entity, int[] categoryIds);
     }
 }

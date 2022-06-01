@@ -10,5 +10,7 @@ namespace YemekTarifleriApp.Data.Abstract
     public interface ICategoryRepository : IRepository<Category>
     {
         List<Category> GetRecipesByCategory(string name);
+        void Create(Category entity, int[] categoryIds);
+        void Update(Category entity, int[] categoryIds);
     }
 }

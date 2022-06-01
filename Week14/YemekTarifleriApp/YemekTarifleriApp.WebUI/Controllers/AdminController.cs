@@ -28,10 +28,12 @@ namespace YemekTarifleriApp.WebUI.Controllers
             return View();
         }
 
+        //Admin Recipe
         public IActionResult RecipeList()
         {
             return View(_recipeService.GetAll());
         }
+       
         public IActionResult RecipeCreate()
         {
             ViewBag.Categories = _categoryService.GetAll();
@@ -113,6 +115,7 @@ namespace YemekTarifleriApp.WebUI.Controllers
 
             model.ImageUrl = urlGenerate.UploadImage(file, url);
             var entity = _recipeService.GetById(model.RecipeId);
+
             entity.RecipeName = model.RecipeName;
             entity.RecipeMaterial = model.RecipeMaterial; 
             entity.RecipeDescription = model.RecipeDescription;
@@ -132,6 +135,79 @@ namespace YemekTarifleriApp.WebUI.Controllers
             return RedirectToAction("RecipeList");
         }
 
-       
+
+        //Admin Kategori
+
+        public IActionResult CategoryList()
+        {
+            return View(_categoryService.GetAll());
+        }
+        public IActionResult CategoryCreate()
+        {
+            ViewBag.Categories = _categoryService.GetAll();
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult CategoryCreate(CategoryModel model, int[] categoryIds)
+        {
+            if (ModelState.IsValid)
+            {
+                JobManager urlGenerate = new JobManager();
+                var url = urlGenerate.MakeUrl(model.CategoryName);
+                var category = new Category()
+                {
+                    CategoryName = model.CategoryName,
+                    Url = url
+                };
+                _categoryService.Create(category, categoryIds);
+
+                return RedirectToAction("CategoryList");
+            }
+            ViewBag.Categories = _categoryService.GetAll();
+            if (categoryIds.Length > 0)
+            {
+                model.SelectedCategories = categoryIds.Select(catId => new Category()
+                {
+                    CategoryId = catId
+                }).ToList();
+            }
+            else
+            {
+                ViewBag.CategoryMessage = "Lütfen bir kategori seçimi yapınız!";
+            }
+
+            return View(model);
+        }
+        public IActionResult CategoryEdit(int id)
+        {
+            var entity = _categoryService.GetById(id);
+            var model = new CategoryModel()
+            {
+                CategoryId = entity.CategoryId,
+                CategoryName = entity.CategoryName,
+                Url = entity.Url
+            };
+            ViewBag.Categories = _categoryService.GetAll();
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult CategoryEdit(CategoryModel model, int[] categoryIds)
+        {
+            JobManager urlGenerate = new JobManager();
+            var url = urlGenerate.MakeUrl(model.CategoryName);
+
+            var entity = _categoryService.GetById(model.CategoryId);
+            entity.CategoryName = model.CategoryName;
+            entity.Url = model.Url;
+            _categoryService.Update(entity, categoryIds);
+            return RedirectToAction("CategoryList");
+        }
+        public IActionResult CategoryDelete(int categoryId)
+        {
+            var entity = _categoryService.GetById(categoryId);
+            _categoryService.Delete(entity);
+            return RedirectToAction("CategoryList");
+        }
     }
 }
