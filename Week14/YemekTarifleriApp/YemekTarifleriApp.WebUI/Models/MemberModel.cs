@@ -16,6 +16,7 @@ namespace YemekTarifleriApp.WebUI.Models
 
         [Required(ErrorMessage = "Yazar maili zorunludur!")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Yazar maili 5-50 karakter uzunluğunda olmalıdır!")]
+        [DataType(DataType.EmailAddress)]
         public string MemberMail{ get; set; }
         [Required(ErrorMessage = "Yazar kullanıcı adı zorunludur!")]
         [StringLength(50, MinimumLength = 3, ErrorMessage = "Yazar kullanıcı adı 5-50 karakter uzunluğunda olmalıdır!")]

@@ -414,3 +414,6 @@ C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifle
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Admin\MemberList.cshtml.g.cs
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Admin\MemberCreate.cshtml.g.cs
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Admin\MemberEdit.cshtml.g.cs
+C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Admin\MemberCreate.cshtml.g.cs
+C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Admin\MemberEdit.cshtml.g.cs
+C:\Users\elifk\Desktop\Projects_ElifKaya\newWeb6\Week14\YemekTarifleriApp\YemekTarifleriApp.WebUI\obj\Debug\net5.0\Razor\Views\Admin\MemberList.cshtml.g.cs

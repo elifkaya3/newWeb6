@@ -61,6 +61,76 @@ namespace YemekTarifleriApp.WebUI
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                   name: "adminmembercreate",
+                   pattern: "admin/membercreate/create",
+                   defaults: new { controller = "Admin", action = "MemberCreate" }
+                   );
+
+                endpoints.MapControllerRoute(
+                   name: "admincategories",
+                   pattern: "admin/memberlist",
+                   defaults: new { controller = "Admin", action = "MemberList" }
+                   );
+
+                endpoints.MapControllerRoute(
+                   name: "adminmemberedit",
+                   pattern: "admin/memberedit/{id?}",
+                   defaults: new { controller = "Admin", action = "MemberEdit" }
+                   );
+                endpoints.MapControllerRoute(
+                    name: "admincategorycreate",
+                    pattern: "admin/categorycreate/create",
+                    defaults: new { controller = "Admin", action = "CategoryCreate" }
+                    );
+
+                endpoints.MapControllerRoute(
+                   name: "admincategories",
+                   pattern: "admin/categorylist",
+                   defaults: new { controller = "Admin", action = "CategoryList" }
+                   );
+
+                endpoints.MapControllerRoute(
+                   name: "admincategoryedit",
+                   pattern: "admin/categoryedit/{id?}",
+                   defaults: new { controller = "Admin", action = "CategoryEdit" }
+                   );
+
+                endpoints.MapControllerRoute(
+                    name: "adminrecipecreate",
+                    pattern: "admin/recipecreate/create",
+                    defaults: new { controller = "Admin", action = "RecipeCreate" }
+                    );
+
+                endpoints.MapControllerRoute(
+                    name: "adminrecipes",
+                    pattern: "admin/recipelist",
+                    defaults: new { controller = "Admin", action = "RecipeList" }
+                    );
+
+                endpoints.MapControllerRoute(
+                   name: "search",
+                   pattern: "search",
+                   defaults: new { controller = "YemekTarifleriApp", action = "Search" }
+                   );
+
+                endpoints.MapControllerRoute(
+                   name: "recipes",
+                   pattern: "recipes/{category?}",
+                   defaults: new { controller = "YemekTarifleriApp", action = "List" }
+                   );
+
+                endpoints.MapControllerRoute(
+                   name: "adminrecipeedit",
+                   pattern: "admin/recipeedit/{id?}",
+                   defaults: new { controller = "Admin", action = "RecipeEdit" }
+                   );
+
+                endpoints.MapControllerRoute(
+                   name: "recipedetails",
+                   pattern: "{url}",
+                   defaults: new { controller = "YemekTarifleriApp", action = "Details" }
+                   );
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });

@@ -224,7 +224,7 @@ namespace YemekTarifleriApp.WebUI.Controllers
         [HttpPost]
         public IActionResult MemberCreate(MemberModel model, int[] memberIds)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 JobManager urlGenerate = new JobManager();
                 var member = new Member()
@@ -240,6 +240,25 @@ namespace YemekTarifleriApp.WebUI.Controllers
             ViewBag.Categories = _categoryService.GetAll();
 
             return View(model);
+        }
+        public IActionResult RecipeEdit(RecipeModel model, int[] categoryIds, IFormFile file)
+        {
+            JobManager urlGenerate = new JobManager();
+            var url = urlGenerate.MakeUrl(model.RecipeName);
+
+            model.ImageUrl = urlGenerate.UploadImage(file, url);
+            var entity = _recipeService.GetById(model.RecipeId);
+
+            entity.RecipeName = model.RecipeName;
+            entity.RecipeMaterial = model.RecipeMaterial;
+            entity.RecipeDescription = model.RecipeDescription;
+            entity.Url = model.Url;
+            entity.IsApproved = model.IsApproved;
+            entity.IsHome = model.IsHome;
+            entity.ImageUrl = model.ImageUrl;
+
+            _recipeService.Update(entity, categoryIds);
+            return RedirectToAction("RecipeList");
         }
         public IActionResult MemberEdit(int id)
         {
@@ -257,13 +276,11 @@ namespace YemekTarifleriApp.WebUI.Controllers
         [HttpPost]
         public IActionResult MemberEdit(MemberModel model, int[] memberIds)
         {
-            JobManager urlGenerate = new JobManager();
-            var url = urlGenerate.MakeUrl(model.MemberName);
-
             var entity = _memberService.GetById(model.MemberId);
             entity.MemberName = model.MemberName;
             entity.MemberMail = model.MemberMail;
             entity.MemberUserName = model.MemberUserName;
+
             _memberService.Update(entity, memberIds);
             return RedirectToAction("MemberList");
         }
