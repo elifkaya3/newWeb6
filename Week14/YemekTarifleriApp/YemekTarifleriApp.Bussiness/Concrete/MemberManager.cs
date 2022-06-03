@@ -19,7 +19,12 @@ namespace YemekTarifleriApp.Bussiness.Concrete
        
         public void Create(Member entity)
         {
-            _memberRepository.Create(entity);
+            throw new NotImplementedException();
+        }
+
+        public void Create(Member entity, int[] memberIds)
+        {
+            _memberRepository.Create(entity, memberIds);
         }
 
         public void Delete(Member entity)
@@ -39,9 +44,12 @@ namespace YemekTarifleriApp.Bussiness.Concrete
 
         public void Update(Member entity)
         {
-            _memberRepository.Update(entity);
+            throw new NotImplementedException();
         }
 
-      
+        public void Update(Member entity, int[] memberIds)
+        {
+            _memberRepository.Update(entity, memberIds);
+        }
     }
 }

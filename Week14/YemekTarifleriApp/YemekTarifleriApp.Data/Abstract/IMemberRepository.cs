@@ -13,6 +13,7 @@ namespace YemekTarifleriApp.Data.Abstract
 {
     public interface IMemberRepository:IRepository<Member>
     {
-        //kayıt metodları gelecek
+        void Create(Member entity, int[] memberIds);
+        void Update(Member entity, int[] memberIds);
     }
 }

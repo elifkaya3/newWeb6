@@ -9,13 +9,17 @@
 ul{
   list-style-type: none;
 }
-.liste{
-  display: flex;
-  justify-content: space-around;
+.liste {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    background-color: #f0932b;
+    width: 100%;
 }
 footer {
     background-color: #f0932b;
     color: #fff;
+   
 }
 .fab {
 padding: 8px;

@@ -151,7 +151,7 @@ namespace YemekTarifleriApp.WebUI.Controllers
         [HttpPost]
         public IActionResult CategoryCreate(CategoryModel model, int[] categoryIds)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 JobManager urlGenerate = new JobManager();
                 var url = urlGenerate.MakeUrl(model.CategoryName);
@@ -209,5 +209,70 @@ namespace YemekTarifleriApp.WebUI.Controllers
             _categoryService.Delete(entity);
             return RedirectToAction("CategoryList");
         }
+
+        //Admin Member 
+        public IActionResult MemberList()
+        {
+            return View(_memberService.GetAll());
+        }
+        public IActionResult MemberCreate()
+        {
+            ViewBag.Members = _memberService.GetAll();
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult MemberCreate(MemberModel model, int[] memberIds)
+        {
+            if (!ModelState.IsValid)
+            {
+                JobManager urlGenerate = new JobManager();
+                var member = new Member()
+                {
+                    MemberName = model.MemberName,
+                    MemberMail=model.MemberMail,
+                    MemberUserName=model.MemberUserName
+                };
+                _memberService.Create(member, memberIds);
+
+                return RedirectToAction("MemberList");
+            }
+            ViewBag.Categories = _categoryService.GetAll();
+
+            return View(model);
+        }
+        public IActionResult MemberEdit(int id)
+        {
+            var entity = _memberService.GetById(id);
+            var model = new MemberModel()
+            {
+                MemberId = entity.MemberId,
+                MemberName = entity.MemberName,
+                MemberMail=entity.MemberMail,
+                MemberUserName=entity.MemberUserName
+            };
+            ViewBag.Members = _memberService.GetAll();
+            return View(model);
+        }
+        [HttpPost]
+        public IActionResult MemberEdit(MemberModel model, int[] memberIds)
+        {
+            JobManager urlGenerate = new JobManager();
+            var url = urlGenerate.MakeUrl(model.MemberName);
+
+            var entity = _memberService.GetById(model.MemberId);
+            entity.MemberName = model.MemberName;
+            entity.MemberMail = model.MemberMail;
+            entity.MemberUserName = model.MemberUserName;
+            _memberService.Update(entity, memberIds);
+            return RedirectToAction("MemberList");
+        }
+        public IActionResult MemberDelete(int memberId)
+        {
+            var entity = _memberService.GetById(memberId);
+            _memberService.Delete(entity);
+            return RedirectToAction("MemberList");
+        }
+
     }
 }
