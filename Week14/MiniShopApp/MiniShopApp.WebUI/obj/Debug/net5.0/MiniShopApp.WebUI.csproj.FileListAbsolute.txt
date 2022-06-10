@@ -10,6 +10,7 @@ C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\bin\Debug\net5.0\MiniShopApp.WebUI.Views.dll
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\bin\Debug\net5.0\MiniShopApp.WebUI.Views.pdb
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\bin\Debug\net5.0\Humanizer.dll
+C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\bin\Debug\net5.0\Iyzipay.dll
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\bin\Debug\net5.0\Microsoft.AspNetCore.Http.Features.dll
@@ -83,7 +84,9 @@ C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Admin\UserCreate.cshtml.g.cs
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Admin\UserEdit.cshtml.g.cs
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Admin\UserList.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Card\CheckOut.cshtml.g.cs
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Card\Index.cshtml.g.cs
+C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Card\Orders.cshtml.g.cs
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\MiniShop\Details.cshtml.g.cs
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\MiniShop\List.cshtml.g.cs
@@ -104,4 +107,3 @@ C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\ref\MiniShopApp.WebUI.dll
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\MiniShopApp.WebUI.pdb
 C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\MiniShopApp.WebUI.genruntimeconfig.cache
-C:\Users\Web ve Mobil Prog\Desktop\Projects_ElifKaya\newWeb6\Week14\MiniShopApp\MiniShopApp.WebUI\obj\Debug\net5.0\Razor\Views\Card\CheckOut.cshtml.g.cs

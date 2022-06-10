@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Bdpr1Nfwo49/3QTX7J228fIF3TTOtssJQiRnORANBjhuEPGcWzNB8CqgGMIOlXs74gqFlu4ybGQcokcC/vspNg==",
+  "dgSpecHash": "CgFMLHW4r4V2LeIRiPuDWsVAi4WZoKtBYkSyqwS64eLYMSVLGspdJ/OqR1XwS7YCUz/fAmaTid1z2qvyal45Tg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Web ve Mobil Prog\\Desktop\\Projects_ElifKaya\\newWeb6\\Week14\\MiniShopApp\\MiniShopApp.WebUI\\MiniShopApp.WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Web ve Mobil Prog\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Web ve Mobil Prog\\.nuget\\packages\\iyzipay\\2.1.39\\iyzipay.2.1.39.nupkg.sha512",
     "C:\\Users\\Web ve Mobil Prog\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.16\\microsoft.aspnetcore.cryptography.internal.5.0.16.nupkg.sha512",
     "C:\\Users\\Web ve Mobil Prog\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.16\\microsoft.aspnetcore.cryptography.keyderivation.5.0.16.nupkg.sha512",
     "C:\\Users\\Web ve Mobil Prog\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",

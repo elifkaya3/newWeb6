@@ -46,7 +46,7 @@ namespace MiniShopApp.WebUI
 
                 //Lockout
                 options.Lockout.MaxFailedAccessAttempts = 3;
-                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(60);
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(10);
                 options.Lockout.AllowedForNewUsers = true;
 
                 //User
@@ -61,7 +61,7 @@ namespace MiniShopApp.WebUI
                 options.LoginPath = "/account/login";
                 options.LogoutPath = "/account/logout";
                 options.AccessDeniedPath = "/account/accessdenied";
-                options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(60);
                 options.SlidingExpiration = true;
                 options.Cookie = new CookieBuilder()
                 {
@@ -82,10 +82,12 @@ namespace MiniShopApp.WebUI
             services.AddScoped<IProductRepository, EfCoreProductRepository>();
             services.AddScoped<ICategoryRepository, EfCoreCategoryRepository>();
             services.AddScoped<ICardRepository, EfCoreCardRepository>();
+            services.AddScoped<IOrderRepository, EfCoreOrderRepository>();
 
             services.AddScoped<IProductService, ProductManager>();
             services.AddScoped<ICategoryService, CategoryManager>();
             services.AddScoped<ICardService, CardManager>();
+            services.AddScoped<IOrderService, OrderManager>();
 
             //Projemizin MVC yapýsýnda olmasýný saðlar.
             services.AddControllersWithViews();
@@ -115,10 +117,17 @@ namespace MiniShopApp.WebUI
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                  name: "orders",
+                  pattern: "orders",
+                  defaults: new { controller = "Card", action = "GetOrders" }
+                  );
+
+                endpoints.MapControllerRoute(
                     name: "checkout",
                     pattern: "checkout",
                     defaults: new { controller = "Card", action = "CheckOut" }
                     );
+
                 endpoints.MapControllerRoute(
                     name: "card",
                     pattern: "card",
